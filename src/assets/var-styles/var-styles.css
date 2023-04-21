@@ -1,0 +1,136 @@
+
+:root {
+    /*? COLORS --------------------------------------------------------->  */
+    --color-primary             :#212121;
+    --color-primary-400         :#4b4b4b;    
+    --color-primary-300         :#a6a6a6;   
+    --color-primary-200         :#e5e5e5;   
+    --color-primary-100         :#dddddd;
+
+    --color-bg                  :#f5f5f5;
+    --color-container           :#fdfdfd;
+    --color-navbar              :#212121;
+    --color-kpi-brand           :#212121;
+
+    /* STATUS */
+    --color-danger              :#e50f0f;
+    --color-danger-soft         :#fce7e7;
+    --color-warn                :#e08803;
+    --color-warn-soft           :#fcf3e6;
+    --color-success             :#2ca04c;
+    --color-success-soft        :#ebf6ed;
+    --color-info                :#0076b9;
+    --color-info-soft           :#e6f3fa;
+    --color-available           :#18345d;
+    --color-available-soft      :#bfe2f5;
+    --color-muted               :#828282;
+    --color-muted-soft          :#f0f0f0;
+
+    /* BRAND COLORS */
+    --color-primary-brand       :#ffb840;
+    --color-secondary-brand     :#df0024;
+
+    /* CHARTS */
+    --color-chart-100           :#41b5f5;
+    --color-chart-200           :#0082CB;
+    --color-chart-300           :#18345D;
+
+    /* STATUS LOCKER GRID */
+    --color-available           :#363636;
+    --color-occupied            :#ed1f2d;
+    --color-defective           :#de8c00;
+    --color-open                :#ffffff;
+    --color-expired             :#fdf300;
+    --color-schedule            :#ab1ec2;
+
+
+    /* STARS */
+    --color-star-1              :#E25B5B;
+    --color-star-2              :#FEAA1D;
+    --color-star-3              :#FDCC41;
+    --color-star-4              :#AFCD57;
+    --color-star-5              :#2CA04C;
+
+     /* BUTTONS */
+    --color-btn-default         :#212121;
+    --color-btn-hover           :#4b4b4b;
+    --color-btn-active          :#000;
+
+    /* LOCKERS COLOR */
+    --color-locker-fill         :#2f2f2f;
+    --color-locker-stroke       :#000;
+
+    /*? FONTS------------------------------------------------------------> */
+    --primary-font              :'Inter', sans-serif;
+
+    /* FONT-SIZE */
+    --font-bh1                  :64px;
+    --font-bh2                  :48px;
+    --font-bh3                  :36px;
+    --font-h1                   :24px;
+    --font-h2                   :18px;
+    --font-h3                   :16px;
+    --font-b1                   :14px;
+    --font-c1                   :13px;
+    --font-c2                   :12px;
+    --font-c3                   :10px;
+
+    /* FONT-WEIGHT  */
+    --font-medium               :500;
+    --font-semibold             :600;
+    --font-bold                 :700;
+
+    /* LOGOS SIZE */
+    --logo-auth                 :100px; 
+    --logo-navbar-lg            :39px;
+    --logo-navbar-sm            :35px; 
+    
+    /* CONTAINERS */
+    --container-lg              :1550px;
+    --container-auth-lg         :466px;
+
+    /* NAVBAR */
+    --size-navbar-sm             :82px;
+    --size-navbar-lg             :82px;
+
+    /* RADIUS */
+    --radius-gbl                :20px;
+    /* KPI'S  */
+    --height-kpi-sm             :122px;
+    --height-kpi                :134px;
+    --width-kpi                 :238px;
+    --height-kpi-xl             :272px;
+
+    /* INPUTS */
+    --input-height              :42px;
+    /* RADIUS */
+    --input-radius              :21px;
+
+    /*? BUTTONS ----------------------------------------> */
+    --btn-primary-height        :42px;
+    --btn-primary-height-sm     :34px;
+
+    --btn-primary-padding       :9px 24px 10px 24px;
+    --btn-primary-sm-padding    :5px 24px 10px 24px;
+
+    --btn-radius                :21px;
+
+    --size-icon-sm              :8px;
+    --size-icon-md              :10px;
+
+    /*? IMAGES ------------------------------------------> */
+    /* LOGOS */
+    --img-logo-auth             :url('../logos/logo-box.svg') no-repeat;
+    --img-logo-navbar           :url('../logos/logo-white.svg') no-repeat;
+    --img-big-kpi               :url('../logos/logo-oxxo-kpi.svg') no-repeat;
+    /* ICONS */
+    --icon-translate-navbar     :url('../icons/icon-translate.svg') no-repeat;
+    --icon-info-navbar          :url('../icons/icon-info.svg') no-repeat;
+    --icon-help-navbar          :url('../icons/icon-help.svg') no-repeat; 
+    --icon-logout-navbar        :url('../icons/icon-logout.svg') no-repeat;
+    --icon-file-download        :url('../icons/icon-file-download.svg') no-repeat;
+    --icon-upload               :url('../icons/icon-upload.svg') no-repeat;
+    --icon-plus                 :url('../icons/icon-plus.svg') no-repeat;
+    --icon-chevron-down         :url('../icons/icon-chevron-down.svg') no-repeat;
+    --icon-chevron-right         :url('../icons/icon-chevron-right.svg') no-repeat;
+}

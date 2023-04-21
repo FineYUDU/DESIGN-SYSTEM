@@ -1,1 +1,279 @@
-/* You can add global styles to this file, and also import other style files */
+@import './assets/var-styles/var-styles.css';
+
+/*? GLOBAL STYLES ----------------------------------> */
+body {
+    background-color: var(--color-bg);
+    margin: 0;
+    padding: 0;
+    font-family: var(--primary-font);
+}
+
+/** MOLECULES ------------------------------------> */
+/*! BUTONS ----------------------------------->*/
+/*? BTN SM */
+.btn-primary-gbl-sm {
+    font-family: var(--primary-font);
+    background-color:var(--color-btn-default);
+    color: var(--color-container);
+    font-size: var(--font-b1);
+    height: var(--btn-primary-height-sm);
+    padding: var(--btn-primary-padding-sm);
+    border-radius:var(--btn-radius);
+    border: none;
+}
+
+/* HOVER */
+.btn-primary-gbl-sm:hover {
+    background: var(--color-btn-hover);
+}
+
+/* ACTIVE */
+.btn-primary-gbl-sm:active {
+    background: var(--color-btn-active);
+}
+
+/*? BTN MD */
+.btn-primary-gbl-md {
+    font-family: var(--primary-font);
+    background-color:var(--color-btn-default);
+    color: var(--color-container);
+    font-size: var(--font-c2);
+    height: var(--btn-primary-height-md);
+    padding: var(--btn-primary-padding-md);
+    border-radius:var(--btn-radius);
+    border: none;
+}
+
+/* HOVER */
+.btn-primary-gbl-md:hover {
+    background: var(--color-btn-hover);
+}
+
+/* ACTIVE */
+.btn-primary-gbl-md:active {
+    background: var(--color-btn-active);
+}
+
+/*! CONTAINERS -----------------------------------> */
+/* AUTH STYLES */
+
+.container-grid {
+    display: grid;
+    max-width: var(--container-lg);
+    margin-inline:auto;
+}
+
+.auth-container {
+    width: 29.125rem;
+    margin-inline:auto;
+    background: var(--color-container);
+    border-radius: var(--radius-gbl); 
+    padding: 21px 32px;
+}
+
+/*! SIDEBAR ------------------------------------>*/
+:root {
+    /*? COLORS */
+    --body-color            : #E4E9F7;
+    --sidebar-color         :#FFF;
+    --primary-color         :#695CFE;
+    --primary-color-light   :#F6F5FF;
+    --toggle-color          :#DDD;
+    --text-color            :#707070;
+    /*? TRANSITION  */
+    --tran-02               : all 0.2s ease;
+    --tran-03               : all 0.3s ease;
+    --tran-04               : all 0.4s ease;
+    --tran-05               : all 0.5s ease;
+}
+
+
+
+
+/*? SIDEBAR ---------------> */
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    padding: 10px 14px;
+    background: var(--sidebar-color);
+}
+
+/*! PERSONAL STYLE / TO ALIGN */
+.menu-links {
+    padding: 0;
+}
+
+/*? RESUABLE CSS */
+.sidebar .text {
+    font-size: 16px;
+    font-weight: var(--font-medium);
+    color: var(--text-color);
+}
+
+.sidebar .image {
+    min-width: 60px;
+    display: flex;
+    align-items: center;
+}
+
+
+.sidebar li {
+    height: 50px;
+    margin-top: 10px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar li .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 60px;
+    height: 20px;
+}
+
+.sidebar li .icon
+.sidebar li .text {
+    color: yellow;
+    transition: var(--tran-02);
+}
+
+.sidebar header {
+    position: relative;
+}
+
+.sidebar .image-text .logo {
+    height: 30px;
+    width: 30px;
+    background: red;
+    border-radius: 15px;
+}
+
+.sidebar header .image-text {
+    display: flex;
+    align-items: center;
+}
+
+header .image-text .image-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-text .name {
+    font-weight: var(--font-semibold);
+}
+
+.header-text .profession {
+    margin-top: -2px;
+}
+
+.sidebar header .toggle {
+    position: absolute;
+    top: 50%;
+    right: 25px;
+    transform: translateY(-50%);
+    height: 25px;
+    width: 25px;
+    background: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.sidebar .search-box {
+    background: var(--primary-color-light);
+}
+
+.search-box input {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    background: var(--primary-color-light);
+}
+
+.sidebar li a {
+    height: 100%;
+    width: 100% ;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: var(--tran-04);
+}
+
+.sidebar li a:hover {
+    background: var(--primary-color);
+}
+
+.sidebar li a:hover span {
+    color: #fff;
+}
+
+.sidebar li a:hover .icon
+.sidebar li a:hover .text {
+    color: var(--sidebar-color);
+}
+
+.sidebar .menu-bar {
+    background: red;
+    height: calc(100% -50px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.menu-bar .mode {
+    background: var(--primary-color-light);
+}
+
+.menu-bar .mode .moon-sun {
+    height: 50px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+} 
+
+.menu-bar .mode .i {
+    position: absolute;
+}
+
+.menu-bar .mode .i .sun {
+    opacity: 0;
+}
+
+.menu-bar .mode .toggle-switch {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    min-width: 60px;
+    cursor: pointer;
+}
+
+.toggle-switch .switch {
+    position: relative;
+    height: 22px;
+    width: 44px;
+    border-radius: 25px;
+    background: var(--toggle-color);
+}
+
+.switch::before {
+    content: '';
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    background: var(--sidebar-color);
+}

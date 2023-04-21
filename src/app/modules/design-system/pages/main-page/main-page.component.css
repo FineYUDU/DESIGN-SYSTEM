@@ -1,0 +1,6 @@
+.navbar-styles {
+    margin: 0;
+    background-color: var(--color-navbar);
+    height: var(--size-navbar-lg);
+    width: 100%;
+}

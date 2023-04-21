@@ -1,0 +1,42 @@
+<div class="grid-father">
+    <!--? GRID 1 -->
+    <div class="grid-logo">
+        <div class="logo-navbar" routerLink="grid"></div>
+    </div>
+    
+    <!--? GRID 2 -->
+    <ul class="grid-nav">
+        <li class="nav-align" *ngFor="let nav of Navbar">
+            <a class="nav-link" [routerLink]="nav.route">
+                {{nav.txt}}
+            </a>
+        </li>
+    </ul>
+    
+    <!--? GRID 3 -->
+    <div class="grid-user">
+        <!-- GRID ALERT -->
+        <div class="grid-alert">
+        </div>
+        <!-- GRID SPAN -->
+        <div class="grid-span">
+            <span class="username-dropdown" >Erick Eduardo</span>
+            <span class="role-dropdown" >Administrador</span>
+        </div>
+        <div class="grid-dropdown">
+            <ul class="icon-chevron">
+                <li>
+                    <div></div>
+                    <ul class="dropdown">
+                        <li class="dropdown-link"> 
+                            <a 
+                                *ngFor="let drop of dropdownNav"> 
+                                {{drop.txt}} 
+                            </a> 
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

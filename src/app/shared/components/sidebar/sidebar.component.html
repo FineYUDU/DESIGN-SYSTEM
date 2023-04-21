@@ -1,0 +1,117 @@
+<body>
+    <nav class="sidebar">
+        <header>
+            <div class="image-text">
+    
+                <span class="image">
+                    <div class="logo"></div>
+                </span>
+    
+                <div class="text header-text">
+                    <span class="name">CodingLab</span>
+                    <span class="profession">Web Developer</span>
+                </div>
+            </div>
+            <div class="toggle">
+                <div class="chevron-right"></div>
+            </div>
+        </header>
+    
+        <div class="menu-bar">
+            <div class="menu">
+                <!-- SEARCH -->
+                <li class="search-box">
+                    <div class="icon">
+                        <div class="icon-home"></div>
+                    </div>
+                    <input type="search" placeholder="Search...">
+                </li>
+                <!-- MENU LINKS -->
+                <ul class="menu-links">
+                    <!-- LINK 1 -->
+                    <li class="nav-link">
+                        <a >
+                            <div class="icon">
+                                <div class="icon-home"></div>
+                            </div>
+                            <span class="text nav-text">Layout</span>
+                        </a>
+                    </li>
+                    <!-- LINK 2 -->
+                    <li class="nav-link">
+                        <a >
+                            <div class="icon">
+                                <div class="icon-home"></div>
+                            </div>
+                            <span class="text nav-text">Content</span>
+                        </a>
+                    </li>
+                    <!-- LINK 3 -->
+                    <li class="nav-link">
+                        <a >
+                            <div class="icon">
+                                <div class="icon-home"></div>
+                            </div>
+                            <span class="text nav-text">Forms</span>
+                        </a>
+                    </li>
+                    <!-- LINK 4 -->
+                    <li class="nav-link">
+                        <a >
+                            <div class="icon">
+                                <div class="icon-home"></div>
+                            </div>
+                            <span class="text nav-text">Components</span>
+                        </a>
+                    </li>
+                    <!-- LINK 5 -->
+                    <li class="nav-link">
+                        <a >
+                            <div class="icon">
+                                <div class="icon-home"></div>
+                            </div>
+                            <span class="text nav-text">Helpers</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+    
+            <div class="bottom-content">
+                <li class="">
+                    <a>
+                        <div class="icon">
+                            <div class="icon-home"></div>
+                        </div>
+                        <span class="text nav-text">Logout</span>
+                    </a>
+                </li>
+    
+                <li class="mode">
+                    <div class="moon-sun">
+                        <div class=" i icon moon"></div>
+                        <div class=" i icon sun"></div>
+                    </div>
+                    <span class="mode-text text">Dark Mode</span>
+    
+                    <div class="toggle-switch">
+                        <span class="switch"></span>
+                    </div>
+                </li>
+    
+            </div>
+        </div>
+    </nav>
+    
+    <script>
+        const body = document.querySelector("body"),
+              sidebar = body.querySelector(".sidebar"),
+              toggle = body.querySelector(".toggle"),
+              searchBtn = body.querySelector(".search-box"),
+              modeSwitch = body.querySelector(".toggle-switch"),
+              modeText = body.querySelector(".mode-text")
+    
+              modeSwitch.addEventListener("click", ()=>{
+                body.classList.toggle("dark");
+              })
+    </script>
+</body>
