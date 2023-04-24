@@ -95,11 +95,15 @@
 
     /* RADIUS */
     --radius-gbl                :20px;
-    /* KPI'S  */
-    --height-kpi-sm             :122px;
-    --height-kpi                :134px;
-    --width-kpi                 :238px;
-    --height-kpi-xl             :272px;
+
+    /*? CARD'S -----------------------------------------> */
+    --height-card-sm            :122px;
+    --height-card-md            :134px;
+    --height-card-lg            :250px;
+    --height-card-xl            :400px;
+    /* PADDINGS */
+    --padding-card-y            :12px;
+    --padding-card-x            :18px;
 
     /* INPUTS */
     --input-height              :42px;
@@ -121,6 +125,7 @@
     /*? IMAGES ------------------------------------------> */
     /* LOGOS */
     --img-logo-auth             :url('../logos/logo-box.svg') no-repeat;
+    --img-logo-sidebar           :url('../logos/logo-box-navbar.svg') no-repeat;
     --img-logo-navbar           :url('../logos/logo-white.svg') no-repeat;
     --img-big-kpi               :url('../logos/logo-oxxo-kpi.svg') no-repeat;
     /* ICONS */
@@ -132,5 +137,17 @@
     --icon-upload               :url('../icons/icon-upload.svg') no-repeat;
     --icon-plus                 :url('../icons/icon-plus.svg') no-repeat;
     --icon-chevron-down         :url('../icons/icon-chevron-down.svg') no-repeat;
-    --icon-chevron-right         :url('../icons/icon-chevron-right.svg') no-repeat;
+    --icon-chevron-right        :url('../icons/icon-chevron-right.svg') no-repeat;
+    --icon-search               :url('../icons/icon-search.svg') no-repeat;
+    --icon-home                 :url('../icons/icon-home.svg') no-repeat;
+
+    /*? TRANSITIONS -------------------------------------> */
+    --tran-02                   : all 0.2s ease;
+    --tran-03                   : all 0.3s ease;
+    --tran-04                   : all 0.4s ease;
+    --tran-05                   : all 0.5s ease;
+    
+    /*? SPACING -------------------------------------> */
+    --spacing-md                :24px;
+
 }

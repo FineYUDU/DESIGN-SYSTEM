@@ -1,5 +1,5 @@
-<body>
-    <nav class="sidebar">
+<main class="dark">
+    <nav class="sidebar" [ngClass]="{'close' : isClose }">
         <header>
             <div class="image-text">
     
@@ -8,21 +8,23 @@
                 </span>
     
                 <div class="text header-text">
-                    <span class="name">CodingLab</span>
-                    <span class="profession">Web Developer</span>
+                    <span class="name">Erick Eduardo</span>
+                    <span class="role">Administrador</span>
                 </div>
             </div>
-            <div class="toggle">
+            <div class="toggle" (click)="toggleSidebar()">
                 <div class="chevron-right"></div>
             </div>
         </header>
-    
+
+        <div class="hr-custome"></div>
+        
         <div class="menu-bar">
             <div class="menu">
                 <!-- SEARCH -->
                 <li class="search-box">
                     <div class="icon">
-                        <div class="icon-home"></div>
+                        <div class="icon-search"></div>
                     </div>
                     <input type="search" placeholder="Search...">
                 </li>
@@ -75,43 +77,6 @@
                     </li>
                 </ul>
             </div>
-    
-            <div class="bottom-content">
-                <li class="">
-                    <a>
-                        <div class="icon">
-                            <div class="icon-home"></div>
-                        </div>
-                        <span class="text nav-text">Logout</span>
-                    </a>
-                </li>
-    
-                <li class="mode">
-                    <div class="moon-sun">
-                        <div class=" i icon moon"></div>
-                        <div class=" i icon sun"></div>
-                    </div>
-                    <span class="mode-text text">Dark Mode</span>
-    
-                    <div class="toggle-switch">
-                        <span class="switch"></span>
-                    </div>
-                </li>
-    
-            </div>
         </div>
     </nav>
-    
-    <script>
-        const body = document.querySelector("body"),
-              sidebar = body.querySelector(".sidebar"),
-              toggle = body.querySelector(".toggle"),
-              searchBtn = body.querySelector(".search-box"),
-              modeSwitch = body.querySelector(".toggle-switch"),
-              modeText = body.querySelector(".mode-text")
-    
-              modeSwitch.addEventListener("click", ()=>{
-                body.classList.toggle("dark");
-              })
-    </script>
-</body>
+</main>

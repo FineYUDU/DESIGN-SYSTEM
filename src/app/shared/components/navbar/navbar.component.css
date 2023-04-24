@@ -123,6 +123,8 @@
 }
 
 .icon-chevron li ul.dropdown {
+    display: flex;
+    justify-content:space-between;
     width: 210px;
     height:260px;
     border-radius: var(--radius-gbl);
@@ -132,7 +134,7 @@
     z-index: 999;
     display: none;
     top: 72px;
-    right: 190px;
+    right: 70px;
 }
 
 .icon-chevron li:hover ul.dropdown {

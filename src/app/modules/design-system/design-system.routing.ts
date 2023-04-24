@@ -1,13 +1,19 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { MainPageComponent } from './pages/main-page/main-page.component';
+import { DocsComponent } from './pages/docs/docs.component';
+import { ExamplesComponent } from './pages/examples/examples.component';
+import { PatternsComponent } from './pages/patterns/patterns.component';
 
 const routes: Routes = [
   {
     path:'',
     component:MainPageComponent,
     children:[
-      { path:'**', redirectTo:'' }
+      { path: 'docs', component:DocsComponent },
+      { path: 'examples', component: ExamplesComponent },
+      { path: 'patterns', component: PatternsComponent },
+      { path:'**', redirectTo:'docs' }
     ]
   }
 ];

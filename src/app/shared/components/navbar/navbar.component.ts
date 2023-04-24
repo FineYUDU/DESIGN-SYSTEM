@@ -14,46 +14,42 @@ export class NavbarComponent {
 
   Navbar:NavTxt[] = [
     {
-      txt:'kpi',
-      route:'grid'
+      txt:'docs',
+      route:'docs'
     },
     {
-      txt:'table',
-      route:'table'
+      txt:'examples',
+      route:'examples'
     },
     {
-      txt:'footer',
-      route:'auth'
+      txt:'translate',
+      route:'translate'
     },
     {
-      txt:'header',
-      route:'auth'
+      txt:'patterns',
+      route:'patterns'
     },
     {
-      txt:'chart',
-      route:'auth'
+      txt:'charts',
+      route:'charts'
     },
   ]
 
   dropdownNav:NavTxt[] = [
     {
-      txt:'kpi',
-      route:'grid'
+      txt:'help',
+      route:'help'
     },
     {
-      txt:'table',
-      route:'table'
+      txt:'settings',
+      route:'settings'
     },
     {
-      txt:'footer',
-      route:'auth'
+      txt:'version',
+      route:'version'
     },
     {
-      txt:'header',
-      route:'auth'
-    },
-    {
-      txt:'chart',
+      txt:'logout',
       route:'auth'
     },
   ]

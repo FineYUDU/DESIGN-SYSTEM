@@ -5,6 +5,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { RouterModule } from '@angular/router';
 import { LockerGridComponent } from './components/locker-grid/locker-grid.component';
+import { CardComponent } from './components/card/card.component';
 
 
 
@@ -13,13 +14,15 @@ import { LockerGridComponent } from './components/locker-grid/locker-grid.compon
     SidebarComponent,
     NavbarComponent,
     FooterComponent,
-    LockerGridComponent
+    LockerGridComponent,
+    CardComponent,
   ],
   exports: [
     SidebarComponent,
     NavbarComponent,
     FooterComponent,
-    LockerGridComponent
+    LockerGridComponent,
+    CardComponent,
   ],
   imports: [
     CommonModule,
