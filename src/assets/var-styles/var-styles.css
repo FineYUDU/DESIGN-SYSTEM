@@ -82,12 +82,10 @@
 
     /* LOGOS SIZE */
     --logo-auth                 :100px; 
-    --logo-navbar-lg            :39px;
-    --logo-navbar-sm            :35px; 
-    
-    /* CONTAINERS */
-    --container-lg              :1550px;
-    --container-auth-lg         :466px;
+    --logo-navbar-width         :173px; 
+    --logo-navbar-height        :39px;
+    --logo-sidebar-height       :39px;
+
 
     /* NAVBAR */
     --size-navbar-sm             :82px;
@@ -95,6 +93,51 @@
 
     /* RADIUS */
     --radius-gbl                :20px;
+
+    /*? BUTTONS ----------------------------------------> */
+    --btn-primary-height        :42px;
+    --btn-primary-height-sm     :34px;
+
+    --btn-primary-padding       :9px 24px 10px 24px;
+    --btn-primary-sm-padding    :5px 24px 10px 24px;
+
+    --btn-radius                :21px;
+
+    --size-icon-sm              :15px;
+    --size-icon-md              :10px;
+
+    /*? IMAGES ------------------------------------------> */
+    /* LOGOS */
+    --img-logo-auth             :url('../logos/logo-box.svg') no-repeat;
+    --img-logo-sidebar           :url('../logos/logo-box-navbar.svg') no-repeat;
+    --img-logo-navbar           :url('../logos/logo-white.svg') no-repeat;
+    --img-big-kpi               :url('../logos/logo-oxxo-kpi.svg') no-repeat;
+    /* ICONS */
+    --icon-translate-navbar     :url('../icons/icon-translate.svg') no-repeat;
+    --icon-info-navbar          :url('../icons/icon-info.svg') no-repeat;
+    --icon-info                 :url('../icons/icon-info.svg') no-repeat;
+    --icon-help-navbar          :url('../icons/icon-help.svg') no-repeat; 
+    --icon-logout-navbar        :url('../icons/icon-logout.svg') no-repeat;
+    --icon-file-download        :url('../icons/icon-file-download.svg') no-repeat;
+    --icon-upload               :url('../icons/icon-upload.svg') no-repeat;
+    --icon-plus                 :url('../icons/icon-plus.svg') no-repeat;
+    --icon-chevron-down         :url('../icons/icon-chevron-down.svg') no-repeat;
+    --icon-chevron-right        :url('../icons/icon-chevron-right.svg') no-repeat;
+    --icon-search               :url('../icons/icon-search.svg') no-repeat;
+    --icon-home                 :url('../icons/icon-home.svg') no-repeat;
+    --icon-arrow-success        :url('../icons/icon-arrow-success.svg') no-repeat;
+    --icon-arrow-danger         :url('../icons/icon-arrow-danger.svg') no-repeat;
+
+    /*? TRANSITIONS -------------------------------------> */
+    --tran-02                   : all 0.2s ease;
+    --tran-03                   : all 0.3s ease;
+    --tran-04                   : all 0.4s ease;
+    --tran-05                   : all 0.5s ease;
+    
+    /*? SPACING -------------------------------------> */
+    --spacing-sm                :24px;
+    --spacing-md                :30px;
+    --spacing-lg                :68px;
 
     /*? CARD'S -----------------------------------------> */
     --height-card-sm            :122px;
@@ -110,44 +153,13 @@
     /* RADIUS */
     --input-radius              :21px;
 
-    /*? BUTTONS ----------------------------------------> */
-    --btn-primary-height        :42px;
-    --btn-primary-height-sm     :34px;
-
-    --btn-primary-padding       :9px 24px 10px 24px;
-    --btn-primary-sm-padding    :5px 24px 10px 24px;
-
-    --btn-radius                :21px;
-
-    --size-icon-sm              :8px;
-    --size-icon-md              :10px;
-
-    /*? IMAGES ------------------------------------------> */
-    /* LOGOS */
-    --img-logo-auth             :url('../logos/logo-box.svg') no-repeat;
-    --img-logo-sidebar           :url('../logos/logo-box-navbar.svg') no-repeat;
-    --img-logo-navbar           :url('../logos/logo-white.svg') no-repeat;
-    --img-big-kpi               :url('../logos/logo-oxxo-kpi.svg') no-repeat;
-    /* ICONS */
-    --icon-translate-navbar     :url('../icons/icon-translate.svg') no-repeat;
-    --icon-info-navbar          :url('../icons/icon-info.svg') no-repeat;
-    --icon-help-navbar          :url('../icons/icon-help.svg') no-repeat; 
-    --icon-logout-navbar        :url('../icons/icon-logout.svg') no-repeat;
-    --icon-file-download        :url('../icons/icon-file-download.svg') no-repeat;
-    --icon-upload               :url('../icons/icon-upload.svg') no-repeat;
-    --icon-plus                 :url('../icons/icon-plus.svg') no-repeat;
-    --icon-chevron-down         :url('../icons/icon-chevron-down.svg') no-repeat;
-    --icon-chevron-right        :url('../icons/icon-chevron-right.svg') no-repeat;
-    --icon-search               :url('../icons/icon-search.svg') no-repeat;
-    --icon-home                 :url('../icons/icon-home.svg') no-repeat;
-
-    /*? TRANSITIONS -------------------------------------> */
-    --tran-02                   : all 0.2s ease;
-    --tran-03                   : all 0.3s ease;
-    --tran-04                   : all 0.4s ease;
-    --tran-05                   : all 0.5s ease;
+    /*? RESPONSIVE -----------------------------------------> */
+    /* CONTAINERS */
+    --container-width           :82.45%;
+    --container-max-width       :1550px;
+    --container-auth-lg         :466px;
     
-    /*? SPACING -------------------------------------> */
-    --spacing-md                :24px;
+    /*? TABLE -----------------------------------------> */
+    --table-padding             :18px 32px;
 
 }

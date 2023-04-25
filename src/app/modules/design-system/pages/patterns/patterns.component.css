@@ -1,14 +1,11 @@
-.overview-container {
-    margin-top: 48px;
-}
-
 /*? MAIN GRID */
 .overview-grid {
     display: grid;
-    width: var(--container-lg);
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: var(--height-card-md) var(--height-card-xl) var(--height-card-lg);
-    gap: var(--spacing-md);
+    grid-template-rows:var(--height-card-xl) var(--height-card-lg);
+    gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-sm);
+
 }
 
 .card-grid {

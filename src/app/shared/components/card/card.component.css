@@ -1,0 +1,94 @@
+/* ALIGN */
+.card-grid {
+    display: grid;
+    grid-template-rows:calc(var(--height-card-md) / 2 - var(--padding-card-y)) calc(var(--height-card-md) / 2 - var(--padding-card-y));
+    padding:var(--padding-card-y) var(--padding-card-x);
+    align-items: center;
+}
+
+/*? STYLES ---------------------> */
+/* FOOTER */
+
+.span-header {
+    font-weight: var(--font-medium);
+    font-size: var(--font-b1);
+    color: var(--color-primary);
+}
+
+.span-body {
+    font-weight: var(--font-semibold);
+    font-size: var(--font-bh3);
+    color: var(--color-primary);
+}
+
+.span-footer {
+    font-weight: var(--font-medium);
+    font-size: var(--font-c1);
+    color: var(--color-primary-300);
+}
+
+.span-success {
+    font-weight: var(--font-medium);
+    font-size: var(--font-c1);
+    color: var(--color-success);
+}
+
+.span-danger {
+    font-weight: var(--font-medium);
+    font-size: var(--font-c1);
+    color: var(--color-danger);
+}
+
+/*? ICONS ARROW AND ALIGN */
+/* ICONS ARROW SUCCESS */
+.icon-success {
+    background:var(--icon-arrow-success);
+    background-position: center left;
+    height: var(--size-icon-sm);
+    width: var(--size-icon-sm);
+    cursor: pointer;
+    display: inline-block;
+}
+
+/* ICONS ARROW DANGER */
+.icon-danger {
+    background:var(--icon-arrow-danger);
+    background-position: center left;
+    height: var(--size-icon-sm);
+    width: var(--size-icon-sm);
+    cursor: pointer;
+    display: inline-block;
+}
+
+/* ICONS INFO */
+.icon-info {
+    background:var(--icon-info);
+    background-position: center right;
+    height: var(--size-icon-sm);
+    width: var(--size-icon-sm);
+    cursor: pointer;
+    display: inline-block;
+}
+
+/*? ICONS ARROW AND ALIGN */
+.icon-danger {
+    background:var(--icon-arrow-danger);
+    background-position: center left;
+    height: var(--size-icon-md);
+    width: var(--size-icon-md);
+    cursor: pointer;
+    display: inline-block;
+}
+
+/*? ALIGNS */
+.card-body-kpi {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-header-kpi {
+    display: flex;
+    height: 100%;
+    align-items: flex-start;
+    justify-content: space-between;
+}

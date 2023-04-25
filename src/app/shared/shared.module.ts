@@ -6,6 +6,8 @@ import { FooterComponent } from './components/footer/footer.component';
 import { RouterModule } from '@angular/router';
 import { LockerGridComponent } from './components/locker-grid/locker-grid.component';
 import { CardComponent } from './components/card/card.component';
+import { TableComponent } from './components/table/table.component';
+import { ButtonExportComponent } from './components/button-export/button-export.component';
 
 
 
@@ -16,6 +18,8 @@ import { CardComponent } from './components/card/card.component';
     FooterComponent,
     LockerGridComponent,
     CardComponent,
+    TableComponent,
+    ButtonExportComponent,
   ],
   exports: [
     SidebarComponent,
@@ -23,6 +27,7 @@ import { CardComponent } from './components/card/card.component';
     FooterComponent,
     LockerGridComponent,
     CardComponent,
+    TableComponent,
   ],
   imports: [
     CommonModule,

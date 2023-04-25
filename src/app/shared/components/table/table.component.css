@@ -1,0 +1,24 @@
+.container-table {
+    border-radius: var(--radius-gbl);
+    background: var(--color-container);
+    padding: var(--table-padding);
+    display: grid;
+    grid-template-rows:42px auto 20px ;
+}
+
+.grid-header {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    margin-bottom: var(--spacing-sm);
+}
+
+.column-1 {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.column-2 {
+    display: flex;
+    justify-content: flex-end;
+}

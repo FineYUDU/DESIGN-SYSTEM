@@ -8,7 +8,23 @@ body {
     font-family: var(--primary-font);
 }
 
-/** MOLECULES ------------------------------------> */
+/*! CONTAINERS -----------------------------------> */
+/* RESPONSIVE CONTAINER */
+.container-grid {
+    display: grid;
+    width:var(--container-width);
+    max-width: var(--container-max-width);
+    margin-inline:auto;
+}
+
+.auth-container {
+    width: 466px;
+    margin-inline:auto;
+    background: var(--color-container);
+    border-radius: var(--radius-gbl); 
+    padding: 21px 32px;
+}
+
 /*! BUTONS ----------------------------------->*/
 /*? BTN SM */
 .btn-primary-gbl-sm {
@@ -54,19 +70,4 @@ body {
     background: var(--color-btn-active);
 }
 
-/*! CONTAINERS -----------------------------------> */
-/* AUTH STYLES */
-
-.container-grid {
-    display: grid;
-    max-width: var(--container-lg);
-    margin-inline:auto;
-}
-
-.auth-container {
-    width: 29.125rem;
-    margin-inline:auto;
-    background: var(--color-container);
-    border-radius: var(--radius-gbl); 
-    padding: 21px 32px;
-}
+/*! RESPONSIVE -----------------------------------> */

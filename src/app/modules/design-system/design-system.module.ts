@@ -7,6 +7,7 @@ import { SharedModule } from 'src/app/shared/shared.module';
 import { DocsComponent } from './pages/docs/docs.component';
 import { ExamplesComponent } from './pages/examples/examples.component';
 import { PatternsComponent } from './pages/patterns/patterns.component';
+import { ComponentsDesignSystemModule } from './components/components-design-system.module';
 
 
 @NgModule({
@@ -14,10 +15,11 @@ import { PatternsComponent } from './pages/patterns/patterns.component';
     MainPageComponent,
     DocsComponent,
     ExamplesComponent,
-    PatternsComponent
+    PatternsComponent,
   ],
   imports: [
     CommonModule,
+    ComponentsDesignSystemModule,
     SharedModule,
     DesignSystemRoutingModule
   ]

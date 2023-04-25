@@ -117,7 +117,7 @@
 .sidebar .image-text .logo {
     background:var(--img-logo-sidebar);
     background-position: center left;
-    height: var(--logo-navbar-lg);
+    height: var(--logo-sidebar-height);
     cursor: pointer;
 }
 

@@ -2,10 +2,12 @@
 /* FATHER GRID */
 .grid-father {
     display: grid;
-    max-width:1550px;
     min-height:82px;
     grid-template-columns: calc((100% - 778px) / 2) 778px calc((100% - 778px) / 2);
     margin-inline: auto;
+    position: fixed;
+    right: 8.775%;
+    left: 8.775%;
 }
 
 /* GRID-1 LOGO */
@@ -18,10 +20,11 @@
 .grid-nav {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    gap: var(--spacing-md);
+    gap: var(--spacing-lg);
     height: 100%;
     padding-left:0;
     margin: 0;
+    justify-self: center;
 }
 
 /* GRID-3 TOGGLE */
@@ -81,7 +84,8 @@
 .logo-navbar {
     background:var(--img-logo-navbar);
     background-position: center left;
-    height: var(--logo-navbar-lg);
+    height: var(--logo-navbar-height);
+    width: var(--logo-navbar-width);
     cursor: pointer;
 }
 
@@ -139,6 +143,28 @@
 
 .icon-chevron li:hover ul.dropdown {
     display: grid;
+}
+
+@media screen and (max-width:991px) {
+
+    .grid-father {
+        display: grid;
+        min-height:82px;
+        grid-template-columns: repeat(2, 1fr);
+        margin-inline: auto;
+    }
+
+   .grid-nav {
+    display: none;
+   }
+
+}
+
+@media screen and (min-width:991px) and (max-width:1186px) {
+   /* GRID-2 MENU */
+    .grid-nav {
+        gap: var(--spacing-md);
+    }
 }
 
 

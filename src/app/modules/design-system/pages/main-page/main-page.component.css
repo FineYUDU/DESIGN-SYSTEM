@@ -1,6 +1,19 @@
 .navbar-styles {
+    position: fixed;
     margin: 0;
     background-color: var(--color-navbar);
     height: var(--size-navbar-lg);
     width: 100%;
+    z-index:1;
+}
+
+.navbar-position {
+    z-index:2;
+}
+.margin-top-custome {
+    margin-bottom: 130px;
+}
+
+.margin-top {
+    margin-top: 130px;
 }
