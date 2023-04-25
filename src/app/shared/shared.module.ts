@@ -8,6 +8,7 @@ import { LockerGridComponent } from './components/locker-grid/locker-grid.compon
 import { CardComponent } from './components/card/card.component';
 import { TableComponent } from './components/table/table.component';
 import { ButtonExportComponent } from './components/button-export/button-export.component';
+import { InputComponent } from './components/input/input.component';
 
 
 
@@ -20,6 +21,7 @@ import { ButtonExportComponent } from './components/button-export/button-export.
     CardComponent,
     TableComponent,
     ButtonExportComponent,
+    InputComponent,
   ],
   exports: [
     SidebarComponent,
