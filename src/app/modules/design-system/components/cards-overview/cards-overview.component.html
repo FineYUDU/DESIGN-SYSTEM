@@ -1,8 +1,5 @@
-<!--? GRID ROW -->
-<div class="cards-grid">
     <!-- CARDS -->
     <app-card 
-        *ngFor="let kpi of kpis" 
-        class="card-body-kpi">
+        [gridStyle]="gridOverview"
+        [dataCardOverview]="dataCardOverview">
     </app-card>
-</div>

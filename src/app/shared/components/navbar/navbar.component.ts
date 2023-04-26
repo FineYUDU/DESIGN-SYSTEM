@@ -22,8 +22,8 @@ export class NavbarComponent {
       route:'examples'
     },
     {
-      txt:'translate',
-      route:'translate'
+      txt:'tables',
+      route:'tables'
     },
     {
       txt:'patterns',

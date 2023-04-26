@@ -9,6 +9,13 @@ import { CardComponent } from './components/card/card.component';
 import { TableComponent } from './components/table/table.component';
 import { ButtonExportComponent } from './components/button-export/button-export.component';
 import { InputComponent } from './components/input/input.component';
+import { CalendarComponent } from './components/calendar/calendar.component';
+import { FilterFunnelComponent } from './components/filter-funnel/filter-funnel.component';
+import { Table2Component } from './components/table2/table2.component';
+import { BeadcrumbTableComponent } from './components/beadcrumb-table/beadcrumb-table.component';
+import { ButtonUploadComponent } from './components/button-upload/button-upload.component';
+import { ButtonCreateOrderComponent } from './components/button-create-order/button-create-order.component';
+import { CardTestComponent } from './components/card-test/card-test.component';
 
 
 
@@ -22,6 +29,13 @@ import { InputComponent } from './components/input/input.component';
     TableComponent,
     ButtonExportComponent,
     InputComponent,
+    CalendarComponent,
+    FilterFunnelComponent,
+    Table2Component,
+    BeadcrumbTableComponent,
+    ButtonUploadComponent,
+    ButtonCreateOrderComponent,
+    CardTestComponent,
   ],
   exports: [
     SidebarComponent,
@@ -30,6 +44,14 @@ import { InputComponent } from './components/input/input.component';
     LockerGridComponent,
     CardComponent,
     TableComponent,
+    InputComponent,
+    CalendarComponent,
+    FilterFunnelComponent,
+    Table2Component,
+    BeadcrumbTableComponent,
+    ButtonUploadComponent,
+    ButtonCreateOrderComponent,
+    CardTestComponent,
   ],
   imports: [
     CommonModule,

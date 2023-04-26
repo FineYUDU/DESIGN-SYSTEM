@@ -1,18 +1,51 @@
 
-<div class="card-grid">
-    <!--  HEADER -->
-    <div class="card-header-kpi">
-        <span class="span-header">Uso total</span>
-        <div class="icon-info"></div>
-    </div>
-    <!-- BODY -->
-    <div class="card-body-kpi">
-        <span class="span-body">9,336</span>    
-        <!-- FOOTER -->
-        <div class="card-footer-kpi">
-            <div class="icon-success"></div>
-            <span class="span-success"> 8% </span>
-            <span class="span-footer">vs comparación</span>
+<!-- CARDS ITERATION -->
+<div class="{{gridStyle}}">
+
+    <!--? CARDS OVERVIEW ------------------>
+    <div *ngFor="let kpiOverview of dataCardOverview">
+        <div class="card-style">
+            <div class="card-grid">
+                <!--  HEADER -->
+                <div class="card-header-kpi">
+                    <span class="span-header">{{kpiOverview.header}}</span>
+                    <div class="icon-info"></div>
+                </div>
+                <!-- BODY -->
+                <div class="card-body-kpi">
+                    <span class="span-body">{{kpiOverview.data}}</span>
+                    <!-- FOOTER -->
+                    <div class="card-footer-kpi">
+                        <div class="icon-success" [style]="kpiOverview.disable"></div>
+                        <span class="span-success"> {{kpiOverview.percent}} % </span>
+                        <span class="span-footer">{{kpiOverview.footer}}({{kpiOverview.footerData}})</span>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+
+    <!--? CARDS LOCKER ID ------------------>
+    <div *ngFor="let kpiSummary of dataCardSummary">
+        <div class="card-style">
+            <div class="card-grid">
+                <!--  HEADER -->
+                <div class="card-header-kpi">
+                    <span class="span-header">{{kpiSummary.size}}</span>
+                    <div class="icon-info"></div>
+                </div>
+                <!-- BODY -->
+                <div class="card-body-kpi">
+                    <span class="span-body">{{kpiSummary.data}}</span>
+                    <!-- FOOTER -->
+                    <div class="card-footer-kpi">
+                        <span class="span-success">{{'Available'}}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 </div>
+

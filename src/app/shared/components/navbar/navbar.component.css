@@ -52,7 +52,7 @@
 .icon-chevron {
     background:var(--icon-chevron-down);
     background-position: center center;
-    height: var(--size-icon-md);
+    height: var(--size-icon-xs);
     cursor: pointer;
     margin: 0;
     padding: 0;

@@ -1,0 +1,49 @@
+/* ? BTN ICON */
+.btn-icon-funnel {
+    color: var(--color-primary);
+    background: var(--color-container);
+    padding: var(--btn-primary-padding);
+    border: 1px solid var(--color-primary-200);
+    border-radius:var(--btn-radius);
+    font-size: var(--font-b1);
+    cursor: pointer;
+}
+
+/*? ICON BTN  */
+.icon-funnel {
+    background: var(--icon-funnel); 
+    background-position: right;
+    height: var(--size-icon-sm);
+}
+
+/* *Margin for the txt in the dropdown */
+.margin-start-icon {
+    margin-right: 23px;
+}
+
+/*? HOVER BTN */
+.btn-icon:hover {
+    color: var(--color-container);
+    background: var(--color-btn-default);
+    padding: var(--btn-primary-padding);
+    border: none;
+    border-radius:var(--btn-radius);
+    font-size: var(--font-b1);
+}
+
+/* HOVER */
+.btn-icon:hover {
+    background: var(--color-btn-hover);
+}
+
+/* ACTIVE */
+.btn-icon:active {
+    background: var(--color-btn-active);
+}
+
+
+@media screen and (max-width:991px) {
+    .btn-icon-funnel {
+        display: none;
+    }
+}

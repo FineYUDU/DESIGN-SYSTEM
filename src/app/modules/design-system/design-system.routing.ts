@@ -4,6 +4,7 @@ import { MainPageComponent } from './pages/main-page/main-page.component';
 import { DocsComponent } from './pages/docs/docs.component';
 import { ExamplesComponent } from './pages/examples/examples.component';
 import { PatternsComponent } from './pages/patterns/patterns.component';
+import { TablesComponent } from './pages/tables/tables.component';
 
 const routes: Routes = [
   {
@@ -13,6 +14,7 @@ const routes: Routes = [
       { path: 'docs', component:DocsComponent },
       { path: 'examples', component: ExamplesComponent },
       { path: 'patterns', component: PatternsComponent },
+      { path: 'tables', component: TablesComponent },
       { path:'**', redirectTo:'docs' }
     ]
   }

@@ -1,0 +1,41 @@
+/* ? BTN ICON */
+.btn-icon-upload {
+    color: var(--color-primary);
+    background: var(--color-container);
+    padding: var(--btn-primary-padding);
+    border: 1px solid var(--color-primary-200);
+    border-radius:var(--btn-radius);
+    font-size: var(--font-b1);
+    cursor: pointer;
+    min-height: var(--btn-minheight);
+}
+
+/*? ICON BTN  */
+.icon-upload {
+    background: var(--icon-upload); 
+    background-position: right;
+    height: var(--size-icon-sm);
+    display: flex;
+    align-items: center;
+}
+
+/* *Margin for the txt in the dropdown */
+.margin-start-icon {
+    margin-right: 30px;
+}
+
+/*? HOVER BTN */
+.btn-icon-upload:hover {
+    background: var(--color-container);
+    color: var(--color-btn-default);
+    padding: var(--btn-primary-padding);
+    border: 1px solid var(--color-primary);
+    border-radius:var(--btn-radius);
+    font-size: var(--font-b1);
+}
+
+/* ACTIVE */
+.btn-icon-upload:active {
+    background: var(--color-primary-100);
+}
+

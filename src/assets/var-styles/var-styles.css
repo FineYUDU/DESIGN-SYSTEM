@@ -98,13 +98,14 @@
     --btn-primary-height        :42px;
     --btn-primary-height-sm     :34px;
 
-    --btn-primary-padding       :9px 24px 10px 24px;
-    --btn-primary-sm-padding    :5px 24px 10px 24px;
+    --btn-primary-padding       :10px 24px;
 
     --btn-radius                :21px;
 
+    --size-icon-xs              :6px;
     --size-icon-sm              :15px;
-    --size-icon-md              :10px;
+    --size-icon-md              :16px;
+    --btn-minheight             :42px;
 
     /*? IMAGES ------------------------------------------> */
     /* LOGOS */
@@ -120,6 +121,7 @@
     --icon-logout-navbar        :url('../icons/icon-logout.svg') no-repeat;
     --icon-file-download        :url('../icons/icon-file-download.svg') no-repeat;
     --icon-upload               :url('../icons/icon-upload.svg') no-repeat;
+    --icon-upload-hover         :url('../icons/icon-upload-hover.svg') no-repeat;
     --icon-plus                 :url('../icons/icon-plus.svg') no-repeat;
     --icon-chevron-down         :url('../icons/icon-chevron-down.svg') no-repeat;
     --icon-chevron-right        :url('../icons/icon-chevron-right.svg') no-repeat;
@@ -127,6 +129,8 @@
     --icon-home                 :url('../icons/icon-home.svg') no-repeat;
     --icon-arrow-success        :url('../icons/icon-arrow-success.svg') no-repeat;
     --icon-arrow-danger         :url('../icons/icon-arrow-danger.svg') no-repeat;
+    --icon-funnel               :url('../icons/icon-funnel.svg') no-repeat;
+    --icon-calendar             :url('../icons/icon-calendar.svg') no-repeat;
 
     /*? TRANSITIONS -------------------------------------> */
     --tran-02                   : all 0.2s ease;
@@ -135,6 +139,7 @@
     --tran-05                   : all 0.5s ease;
     
     /*? SPACING -------------------------------------> */
+    --spacing-xs                :18px;
     --spacing-sm                :24px;
     --spacing-md                :30px;
     --spacing-lg                :68px;
@@ -148,10 +153,11 @@
     --padding-card-y            :12px;
     --padding-card-x            :18px;
 
-    /* INPUTS */
-    --input-height              :42px;
-    /* RADIUS */
-    --input-radius              :21px;
+    /*? INPUTS */
+    --input-radius              :60px;
+    --input-width-sm            :180px;
+    --input-width-md            :438px;
+    --input-padding             :10px 24px;
 
     /*? RESPONSIVE -----------------------------------------> */
     /* CONTAINERS */
@@ -161,5 +167,12 @@
     
     /*? TABLE -----------------------------------------> */
     --table-padding             :18px 32px;
-
+    
+    /*? TAB -----------------------------------------> */
+    --padding-tab-sm            :10px 16px;
+    --padding-tab-lg            :18px 32px;
+    
+    /*? GRID LOCKER  -----------------------------------------> */
+    --width-locker-container    :883px;
+    --height-locker-container   :568px;
 }

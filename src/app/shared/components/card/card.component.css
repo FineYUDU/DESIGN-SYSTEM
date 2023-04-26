@@ -1,9 +1,35 @@
+/* MAIN GRID */
+.grid-card-1 {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: var(--height-card-md);
+    gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-sm);  
+}
+
+.grid-card-2 {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: var(--height-card-md);
+    gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-sm);  
+}
+
+
 /* ALIGN */
 .card-grid {
     display: grid;
     grid-template-rows:calc(var(--height-card-md) / 2 - var(--padding-card-y)) calc(var(--height-card-md) / 2 - var(--padding-card-y));
     padding:var(--padding-card-y) var(--padding-card-x);
-    align-items: center;
+    align-items: flex-end;
+}
+
+
+/* CARD DESIGN */
+.card-style {
+    background: var(--color-container);
+    border-radius: var(--radius-gbl);
+    text-align: start;
 }
 
 /*? STYLES ---------------------> */
@@ -91,4 +117,44 @@
     height: 100%;
     align-items: flex-start;
     justify-content: space-between;
+}
+
+/*! RESPONSIVE ----------------------------------------------> */
+
+/*? SM */
+@media screen and (max-width:576px) {
+    /* MAIN GRID */
+    .grid-card-1{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: var(--height-card-md);
+        gap: var(--spacing-sm);
+        margin-bottom: var(--spacing-sm);  
+    }
+}
+
+/*? MD */
+@media screen and (min-width:576px) and (max-width:768px) {
+    .grid-card-1{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: var(--height-card-md);
+        gap: var(--spacing-sm);
+        margin-bottom: var(--spacing-sm);  
+    }
+    .span-footer {
+        font-size: var(--font-c3);
+    }
+
+    .span-header {
+        font-size: var(--font-c3);
+    }
+}
+
+/*? LG */
+@media screen and (min-width:768px) and (max-width:1500px) {
+    .grid-card-1{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: var(--height-card-md);
+        gap: var(--spacing-sm);
+        margin-bottom: var(--spacing-sm);  
+    }
 }

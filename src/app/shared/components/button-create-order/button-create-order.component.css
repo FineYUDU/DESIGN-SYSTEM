@@ -1,0 +1,45 @@
+/* ? BTN ICON */
+.btn-icon-create-order {
+    color: var(--color-container);
+    background: var(--color-btn-default);
+    padding: var(--btn-primary-padding);
+    border: none;
+    border-radius:var(--btn-radius);
+    font-size: var(--font-b1);
+    cursor: pointer;
+    min-height: var(--btn-minheight);
+}
+
+/*? ICON BTN  */
+.icon-create-order {
+    background: var(--icon-plus); 
+    background-position: right;
+    height: var(--size-icon-sm);
+    display: flex;
+    align-items: center;
+}
+
+/* *Margin for the txt in the dropdown */
+.margin-start-icon {
+    margin-right: 30px;
+}
+
+/*? HOVER BTN */
+.btn-icon-create-order:hover {
+    color: var(--color-container);
+    background: var(--color-btn-default);
+    padding: var(--btn-primary-padding);
+    border: none;
+    border-radius:var(--btn-radius);
+    font-size: var(--font-b1);
+}
+
+/* HOVER */
+.btn-icon-create-order:hover {
+    background: var(--color-btn-hover);
+}
+
+/* ACTIVE */
+.btn-icon-create-order:active {
+    background: var(--color-btn-active);
+}

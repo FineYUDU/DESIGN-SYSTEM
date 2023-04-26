@@ -1,56 +1,58 @@
 import { Component } from '@angular/core';
-
-// KPI INTERFACE
-export interface Kpi {
-  percent:number;
-  header:string;
-  data:number;
-  footer:string
-}
+import { KpiOverview } from 'src/app/core/models/index.interfaces';
 
 @Component({
   selector: 'app-cards-overview',
   templateUrl: './cards-overview.component.html',
   styleUrls: ['./cards-overview.component.css']
 })
-export class CardsOverviewComponent {
+export class CardsOverviewComponent  {
 
-  kpis:Kpi[] = [
+  gridOverview:string = 'grid-card-1'
+
+  dataCardOverview:KpiOverview[] = [
     {
-      percent:2.11,
-      header:'vs ayer',
-      data:22,
-      footer:'Entregas de hoy' 
+      header:'Uso total',
+      data:9336,
+      percent:8,
+      footer:'vs comparación', 
+      footerData:7299,
     },
     {
-      percent:2.11,
-      header:'vs ayer',
-      data:354,
-      footer:'Recolecciones de hoy' 
+      header:'Promedio de uso por hora',
+      data:9210,
+      percent:9,
+      footer:'vs comparación', 
+      footerData:705,
     },
     {
-      percent:2.11,
-      header:'vs ayer',
-      data:22,
-      footer:'Entregas de hoy' 
+      header:'Hora con mayor uso',
+      data:1400,
+      footer:'Comparación', 
+      footerData:1600,
+      disable:'display:none;'
     },
     {
+      header:'Día con mayor uso',
+      data:'Jueves',
       percent:2.11,
-      header:'vs ayer',
-      data:22,
-      footer:'Entregas de hoy' 
+      footer:'Comparación', 
+      footerData:'Martes',
+      disable:'display:none;'
     },
     {
+      header:'Clientes únicos',
+      data:4368,
       percent:2.11,
-      header:'vs ayer',
-      data:22,
-      footer:'Entregas de hoy' 
+      footer:'vs comparación', 
+      footerData:3876,
     },
     {
-      percent:2.11,
-      header:'vs ayer',
-      data:22,
-      footer:'Entregas de hoy' 
+      header:'Clientes recurrentes',
+      data:1978,
+      percent:8,
+      footer:'vs comparación', 
+      footerData:1100,
     },
-  ]
+]
 }

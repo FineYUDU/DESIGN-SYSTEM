@@ -1,3 +1,7 @@
-.grid-container {
-display: grid;
+.container-locker {
+    background: var(--color-primary);
+    display: grid;
+    width: var(--width-locker-container);
+    height: var(--height-locker-container);
+    border-radius: var(--radius-gbl);
 }

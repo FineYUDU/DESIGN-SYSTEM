@@ -1,11 +1,13 @@
 /* ? BTN ICON */
-.btn-icon {
+.btn-icon-export {
     color: var(--color-container);
     background: var(--color-btn-default);
     padding: var(--btn-primary-padding);
     border: none;
     border-radius:var(--btn-radius);
     font-size: var(--font-b1);
+    cursor: pointer;
+    min-height: var(--btn-minheight);
 }
 
 /*? ICON BTN  */
@@ -13,6 +15,8 @@
     background: var(--icon-file-download); 
     background-position: right;
     height: var(--size-icon-sm);
+    display: flex;
+    align-items: center;
 }
 
 /* *Margin for the txt in the dropdown */
@@ -21,11 +25,13 @@
 }
 
 /*? HOVER BTN */
-.btn-icon:hover {
-    color: var(--color-container);
-    background: var(--color-btn-default);
-    padding: var(--btn-primary-padding);
-    border: none;
-    border-radius:var(--btn-radius);
-    font-size: var(--font-b1);
+
+/* HOVER */
+.btn-icon-export:hover {
+    background: var(--color-btn-hover);
+}
+
+/* ACTIVE */
+.btn-icon-export:active {
+    background: var(--color-btn-active);
 }

@@ -8,6 +8,10 @@ import { DocsComponent } from './pages/docs/docs.component';
 import { ExamplesComponent } from './pages/examples/examples.component';
 import { PatternsComponent } from './pages/patterns/patterns.component';
 import { ComponentsDesignSystemModule } from './components/components-design-system.module';
+import { TablesComponent } from './pages/tables/tables.component';
+import { SummaryComponent } from './pages/summary/summary.component';
+import { CameraComponent } from './pages/camera/camera.component';
+import { ActivityComponent } from './pages/activity/activity.component';
 
 
 @NgModule({
@@ -16,6 +20,10 @@ import { ComponentsDesignSystemModule } from './components/components-design-sys
     DocsComponent,
     ExamplesComponent,
     PatternsComponent,
+    TablesComponent,
+    SummaryComponent,
+    CameraComponent,
+    ActivityComponent,
   ],
   imports: [
     CommonModule,
