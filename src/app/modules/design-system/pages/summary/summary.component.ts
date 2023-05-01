@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { KpiSummary } from 'src/app/core/models/index.interfaces';
+import { KpiSummary } from 'src/app/core/models';
 
 @Component({
   selector: 'app-summary',
