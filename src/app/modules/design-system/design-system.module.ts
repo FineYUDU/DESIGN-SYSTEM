@@ -12,6 +12,7 @@ import { TablesComponent } from './pages/tables/tables.component';
 import { SummaryComponent } from './pages/summary/summary.component';
 import { CameraComponent } from './pages/camera/camera.component';
 import { ActivityComponent } from './pages/activity/activity.component';
+import { FiltroPipe } from './pipes/filtro.pipe';
 
 
 @NgModule({

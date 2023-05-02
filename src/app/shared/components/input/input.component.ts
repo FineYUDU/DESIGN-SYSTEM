@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class InputComponent {
 
+  public search: string='';
+
+  onSearch( search:string ) {
+    this.search = search;
+    console.log(search);
+  } 
+
 }

@@ -4,10 +4,11 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app.routing';
 import { AppComponent } from './app.component';
+import { FiltroPipe } from './shared/pipes/filtro.pipe';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,

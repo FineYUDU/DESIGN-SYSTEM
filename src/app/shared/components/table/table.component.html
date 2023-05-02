@@ -4,29 +4,31 @@
 
         <!-- HEADER COLUMN 1 -->
         <div class="grid-header-column-1">
-            <!-- INPUT -->
-            <app-input></app-input>
+            <!-- SEARCH -->
+            <div class="input-container">
+                <input type="text" class="input-gbl" placeholder="Busca un locker por ID, numero de serie..." #txtSearch (keyup)="onSearch(txtSearch.value)">
+                <button type="submit" class="btn-search"> <div class="icon-search"></div></button>
+            </div>
         </div>
-        <!-- HEADER COLUMN 2 -->
+        <!--? HEADER COLUMN 2 -->
         <div class="grid-header-column-2">
         <!-- CALENDAR -->
             <app-calendar class="elem-1"></app-calendar>
-        <!-- FUNNEL -->
+        <!-- FUNNEL --> 
             <app-filter-funnel class="elem-2"></app-filter-funnel>
-        <!-- BUTTON -->
+        <!-- BUTTON EXPORT -->
             <app-button-export class="elem-3"></app-button-export>
         </div>
     </div>
-    <!-- TABLE EXAMPLE -->
+    <!--? TABLE GRID -->
     <div class="row-2">
+        <!-- TABLE STYLE -->
         <table class="table">
+            <!-- USERS ----------------------------------------------->
             <thead>
                 <tr>
-                    <th *ngFor="let th of tableHeader;" class="grid-th">
-                        <!-- <button (click)="sortArray(th.campo)">{{th.th | titlecase}}</button>
-                        <div class="icon-arrow"></div> -->
-                        <!-- BTN EXPORT -->
-                        <button type="button" (click)="sortArray(th.campo)">
+                    <th *ngFor="let th of usersHeader;" class="grid-th">
+                        <button type="button" (click)="sortArray(this.users, th.filtro)">
                             <div class="icon-arrow">
                                 <span class="margin-start-icon">
                                     {{th.th | titlecase}}
@@ -37,21 +39,51 @@
                 </tr>
             </thead>
             <tbody>
-                <tr *ngFor="let usuario of usuarios">
+                <tr *ngFor="let user of users">
                     <td>
-                        {{usuario.id}}
+                        {{user.id}}
                     </td>
                     <td>
-                        {{usuario.first_name}}
+                        {{user.first_name}}
                     </td>
                     <td>
-                        {{usuario.last_name}}
+                        {{user.last_name}}
                     </td>
                     <td>
-                        {{usuario.email}}
+                        {{user.email}}
                     </td>
                 </tr>
             </tbody>
+            <!-- POKEMONS TABLE ----------------------------------------------->
+            <thead>
+                <tr>
+                    <th *ngFor="let th of pokemonsHeader;" class="grid-th">
+                        <button type="button" (click)="sortArray(this.pokemons, th.filtro)">
+                            <div class="icon-arrow">
+                                <span class="margin-start-icon">
+                                    {{th.th | titlecase}}
+                                </span>
+                            </div>
+                        </button>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let poke of pokemons | filtro:page:search"
+                [ngStyle]="{'height':'100px'}">
+                    <td>
+                        {{poke.id}}
+                    </td>
+                    <td>
+                        {{poke.name}}
+                    </td>
+                    <td>
+                        <img [src]="poke.pic" [alt]="poke.pic">
+                    </td>
+                </tr>
+            </tbody>
+            <!-- <button (click)="prevPage()">back</button>
+            <button (click)="nextPage()" [disabled]="(pokemons | filtro:page:search).length < 5 ">next</button> -->
         </table>
     </div>
 </div>

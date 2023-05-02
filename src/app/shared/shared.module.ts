@@ -16,6 +16,7 @@ import { BeadcrumbTableComponent } from './components/beadcrumb-table/beadcrumb-
 import { ButtonUploadComponent } from './components/button-upload/button-upload.component';
 import { ButtonCreateOrderComponent } from './components/button-create-order/button-create-order.component';
 import { CardTestComponent } from './components/card-test/card-test.component';
+import { FiltroPipe } from './pipes/filtro.pipe';
 
 
 
@@ -36,6 +37,7 @@ import { CardTestComponent } from './components/card-test/card-test.component';
     ButtonUploadComponent,
     ButtonCreateOrderComponent,
     CardTestComponent,
+    FiltroPipe
   ],
   exports: [
     SidebarComponent,

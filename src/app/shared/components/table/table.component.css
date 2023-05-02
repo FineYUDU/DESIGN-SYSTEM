@@ -25,17 +25,18 @@
     justify-content: end;
     gap: var(--spacing-xs);
 }
-
+/* CALENDAR */
 .elem-1 {
     display: none;
     justify-content: end;
 }
 
+/* FUNEL */
 .elem-2 {
     display: none;
     justify-content: end;
 }
-
+/* EXPORT BUTTON */
 .elem-3 {
     display: flex;
     justify-content: end;
@@ -79,6 +80,10 @@ tr td {
     color: var(--color-primary-400);
 }
 
+tr td img {
+    width: 80px;
+}
+
 
 /*? ICON BTN  */
 
@@ -105,4 +110,58 @@ tr td {
 /* ACTIVE */
 .btn-icon-export:active {
     background: var(--color-btn-active);
+}
+
+
+
+/* SEARCH */
+.icon-search {
+    background: var(--icon-search); 
+    background-position: right;
+    height: var(--size-icon-md);
+    width: var(--size-icon-md);
+}
+
+.input-container {
+    position: inherit;
+    background-color: var(--color-container);
+    display: flex;
+    flex-direction: row;
+    padding: var(--input-padding);
+    width: var(--input-width-md);
+    justify-content: space-between;
+    border: solid 1px var(--color-primary-200);
+    border-radius:var(--input-radius);
+    
+}
+
+.input-container:hover {
+    background-color: var(--color-bg);
+    border: solid 1px var(--color-primary-200);
+    
+}
+
+.input-gbl {
+    position: relative;
+    width: 100%;
+    background: none;
+    border: none;
+    font-size:var(--font-b1);
+}
+
+input:focus {
+    outline: none; 
+}
+
+.btn-search {
+    position: relative;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width:991px) {
+    .input-container {
+        width: var(--input-width-sm);
+    }
 }

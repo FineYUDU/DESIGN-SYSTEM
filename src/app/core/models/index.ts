@@ -1,3 +1,4 @@
+export { FetchAllPokemonResponse } from './pokemon.interface';
 export { Usuario } from './usuario';
 export { ReqResResponse } from './reqres-response';
 export { tableHeader } from './table.interface';
