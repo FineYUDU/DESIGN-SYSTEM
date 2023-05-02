@@ -1,5 +1,5 @@
 .container-table {
-    border-radius: var(--radius-gbl);
+    border-radius: var(--radius-sm);
     background: var(--color-container);
     padding: var(--table-padding);
     display: grid;

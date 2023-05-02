@@ -28,7 +28,7 @@
 /* CARD DESIGN */
 .card-style {
     background: var(--color-container);
-    border-radius: var(--radius-gbl);
+    border-radius: var(--radius-sm);
     text-align: start;
 }
 

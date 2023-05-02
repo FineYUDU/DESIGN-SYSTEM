@@ -11,7 +11,7 @@
 .card-grid {
     padding:var(--padding-card-y) var(--padding-card-x);
     background: var(--color-container);
-    border-radius: var(--radius-gbl);
+    border-radius: var(--radius-sm);
 }
 
 .overview-grid .card-grid:hover {

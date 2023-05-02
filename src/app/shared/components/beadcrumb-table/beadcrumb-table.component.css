@@ -1,7 +1,7 @@
 
 .breadcrumb-container {
     background:var(--color-container);
-    border-radius: var(--radius-gbl);
+    border-radius: var(--radius-sm);
     padding: var(--table-padding);
     margin-bottom: var(--spacing-sm);
 }

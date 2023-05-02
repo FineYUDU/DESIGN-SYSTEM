@@ -23,7 +23,7 @@ body {
     width: 466px;
     margin-inline:auto;
     background: var(--color-container);
-    border-radius: var(--radius-gbl); 
+    border-radius: var(--radius-sm); 
     padding: 21px 32px;
 }
 

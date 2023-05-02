@@ -3,5 +3,5 @@
     display: grid;
     width: var(--width-locker-container);
     height: var(--height-locker-container);
-    border-radius: var(--radius-gbl);
+    border-radius: var(--radius-sm);
 }

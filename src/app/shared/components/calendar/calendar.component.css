@@ -43,9 +43,4 @@ input:focus {
     cursor: pointer;
 }
 
-@media screen and (max-width:991px) {
-    .input-container {
-        display: none;
-    }
 
-}
