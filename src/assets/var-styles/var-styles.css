@@ -131,6 +131,7 @@
     --icon-arrow-danger         :url('../icons/icon-arrow-danger.svg') no-repeat;
     --icon-funnel               :url('../icons/icon-funnel.svg') no-repeat;
     --icon-calendar             :url('../icons/icon-calendar.svg') no-repeat;
+    --icon-arrow                :url('../icons/icon-arrow.svg') no-repeat;
 
     /*? TRANSITIONS -------------------------------------> */
     --tran-02                   : all 0.2s ease;

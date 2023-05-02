@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { KpiOverview } from 'src/app/core/models/index.interfaces';
+import { KpiOverview } from 'src/app/core/models';
 
 @Component({
   selector: 'app-cards-overview',

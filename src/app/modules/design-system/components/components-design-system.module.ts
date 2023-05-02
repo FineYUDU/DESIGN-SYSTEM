@@ -2,15 +2,18 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CardsOverviewComponent } from './cards-overview/cards-overview.component';
 import { SharedModule } from 'src/app/shared/shared.module';
+import { TestingTablesComponent } from './testing-tables/testing-tables.component';
 
 
 
 @NgModule({
   declarations: [
-    CardsOverviewComponent
+    CardsOverviewComponent,
+    TestingTablesComponent
   ],
   exports: [
-    CardsOverviewComponent
+    CardsOverviewComponent,
+    TestingTablesComponent
   ],
   imports: [
     CommonModule,
