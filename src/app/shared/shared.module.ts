@@ -17,6 +17,7 @@ import { ButtonUploadComponent } from './components/button-upload/button-upload.
 import { ButtonCreateOrderComponent } from './components/button-create-order/button-create-order.component';
 import { CardTestComponent } from './components/card-test/card-test.component';
 import { FiltroPipe } from './pipes/filtro.pipe';
+import { TableBreadcrumbComponent } from './components/table-breadcrumb/table-breadcrumb.component';
 
 
 
@@ -37,7 +38,8 @@ import { FiltroPipe } from './pipes/filtro.pipe';
     ButtonUploadComponent,
     ButtonCreateOrderComponent,
     CardTestComponent,
-    FiltroPipe
+    FiltroPipe,
+    TableBreadcrumbComponent
   ],
   exports: [
     SidebarComponent,
@@ -54,6 +56,7 @@ import { FiltroPipe } from './pipes/filtro.pipe';
     ButtonUploadComponent,
     ButtonCreateOrderComponent,
     CardTestComponent,
+    TableBreadcrumbComponent
   ],
   imports: [
     CommonModule,

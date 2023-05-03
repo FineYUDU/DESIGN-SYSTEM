@@ -1,4 +1,4 @@
-.icon-celendar {
+.icon-calendar {
     background: var(--icon-calendar); 
     background-position: right;
     height: var(--size-icon-md);
@@ -10,18 +10,17 @@
     background-color: var(--color-container);
     display: flex;
     flex-direction: row;
-    padding: var(--input-padding);
+    /* padding: var(--input-padding); */
     width: var(--input-width-sm);
     justify-content: space-between;
     border: solid 1px var(--color-primary-200);
     border-radius:var(--input-radius);
-    
+    min-height: var(--btn-minheight);
 }
 
 .input-container:hover {
     background-color: var(--color-bg);
     border: solid 1px var(--color-primary-200);
-    
 }
 
 .input-gbl {
@@ -30,6 +29,7 @@
     background: none;
     border: none;
     font-size:var(--font-b1);
+    margin-left: 24px;
 }
 
 input:focus {
@@ -41,6 +41,7 @@ input:focus {
     background: none;
     border: none;
     cursor: pointer;
+    margin-right: 24px;
 }
 
 
