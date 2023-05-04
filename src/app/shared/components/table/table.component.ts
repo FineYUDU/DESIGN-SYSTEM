@@ -8,12 +8,19 @@ import { Pokemon } from 'src/app/core/models/pokemon.interface';
   styleUrls: ['./table.component.css']
 })
 export class TableComponent {
+    // BUTTONS DISPLAY
+  @Input() calendar:string ='none'
+  @Input() filterFunnel:string ='none'
+  @Input() btnExport:string ='none'
+
   //USERS TABLE
   @Input() usersHeader:tableHeader[] = [];
   @Input() users:Usuario[] = [];
+
   //POKEMONS TABLE
   @Input() pokemonsHeader:tableHeader[] = [];
   @Input() pokemons:Pokemon[] = [];
+  
   //PAGINATION
   public page: number = 0;
   // SEARCH

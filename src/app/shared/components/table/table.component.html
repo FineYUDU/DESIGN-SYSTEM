@@ -1,23 +1,23 @@
 <!-- CONTAINER TABLE} -->
 <div class="container-table">
     <div class="grid-header">
-
         <!-- HEADER COLUMN 1 -->
-        <div class="grid-header-column-1">
+        <div class="column-1">
             <!-- SEARCH -->
             <div class="input-container">
-                <input type="text" class="input-gbl" placeholder="Busca un locker por ID, numero de serie..." #txtSearch (keyup)="onSearch(txtSearch.value)">
+                <input type="text" class="input-gbl" placeholder="Busca un locker por ID, numero de serie..." 
+                #txtSearch (keyup)="onSearch(txtSearch.value)">
                 <button type="submit" class="btn-search"> <div class="icon-search"></div></button>
             </div>
         </div>
         <!--? HEADER COLUMN 2 -->
-        <div class="grid-header-column-2">
+        <div class="column-2">
         <!-- CALENDAR -->
-            <app-calendar class="elem-1"></app-calendar>
+            <app-calendar class="{{calendar}}"></app-calendar>
         <!-- FUNNEL --> 
-            <app-filter-funnel class="elem-2"></app-filter-funnel>
+            <app-filter-funnel class="{{filterFunnel}}" ></app-filter-funnel>
         <!-- BUTTON EXPORT -->
-            <app-button-export class="elem-3"></app-button-export>
+            <app-button-export class="{{btnExport}}"></app-button-export>
         </div>
     </div>
     <!--? TABLE GRID -->

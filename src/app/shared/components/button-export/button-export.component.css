@@ -1,13 +1,14 @@
+
 /* ? BTN ICON */
 .btn-icon-export {
-    color: var(--color-container);
     background: var(--color-btn-default);
+    color: var(--color-container);
     padding: var(--btn-primary-padding);
     border: none;
     border-radius:var(--btn-radius);
     font-size: var(--font-b1);
     cursor: pointer;
-    min-height: var(--btn-minheight);
+    height:var(--btn-minheight);
 }
 
 /*? ICON BTN  */

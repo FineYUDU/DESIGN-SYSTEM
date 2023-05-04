@@ -8,6 +8,11 @@ import { UsuariosService } from 'src/app/core/services/usuarios.service';
   styleUrls: ['./examples.component.css']
 })
 export class ExamplesComponent {
+  
+  // IF YOU DONT WANT ANY OF THIS FIELDS, PUT 'none' IN THE FIELD STRING
+  calendar:string =''
+  btnExport:string =''
+  filterFunnel:string =''
 
   public usuarios:Usuario[] = [];
 

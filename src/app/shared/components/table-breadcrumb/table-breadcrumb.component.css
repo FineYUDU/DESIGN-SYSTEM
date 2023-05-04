@@ -1,3 +1,4 @@
+/* CONTAINER MAIN */
 .container-table {
     border-radius: var(--radius-sm);
     background: var(--color-container);
@@ -7,7 +8,7 @@
     row-gap: var(--spacing-sm);
     margin-bottom: var(--spacing-md);
 }
-
+/* HEADER */
 .grid-header {
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -15,33 +16,22 @@
     margin-bottom: var(--spacing-sm);
 }
 
-.grid-header-column-1 {
+.none {
+    display: none;
+}
+
+/* COLUMN 1 HEADER  */
+.column-1 {
     display: grid;
     grid-template-columns: 1fr;
 }
 
-.grid-header-column-2 {
+/* COLUMN 2 HEADER  */
+.column-2 {
     display: flex;
     justify-content: end;
     gap: var(--spacing-xs);
 }
-/* CALENDAR */
-.elem-1 {
-    /* display: none; */
-    justify-content: end;
-}
-
-/* FUNEL */
-.elem-2 {
-    /* display: none; */
-    justify-content: end;
-}
-/* EXPORT BUTTON */
-.elem-3 {
-    display: flex;
-    justify-content: end;
-}
-
 
 /* TABLE */
 .table {
