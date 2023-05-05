@@ -102,6 +102,7 @@
     --logo-navbar-width         :173px; 
     --logo-navbar-height        :39px;
     --logo-sidebar-height       :39px;
+    --gap-navbar                :52px;
 
     /* NAVBAR */
     --size-navbar-sm             :82px;
