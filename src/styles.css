@@ -27,49 +27,4 @@ body {
     padding: 21px 32px;
 }
 
-/*! BUTONS ----------------------------------->*/
-/*? BTN SM */
-.btn-primary-gbl-sm {
-    font-family: var(--primary-font);
-    background-color:var(--color-btn-default);
-    color: var(--color-container);
-    font-size: var(--font-b1);
-    height: var(--btn-primary-height-sm);
-    padding: var(--btn-primary-padding-sm);
-    border-radius:var(--btn-radius);
-    border: none;
-}
-
-/* HOVER */
-.btn-primary-gbl-sm:hover {
-    background: var(--color-btn-hover);
-}
-
-/* ACTIVE */
-.btn-primary-gbl-sm:active {
-    background: var(--color-btn-active);
-}
-
-/*? BTN MD */
-.btn-primary-gbl-md {
-    font-family: var(--primary-font);
-    background-color:var(--color-btn-default);
-    color: var(--color-container);
-    font-size: var(--font-c2);
-    height: var(--btn-primary-height-md);
-    padding: var(--btn-primary-padding-md);
-    border-radius:var(--btn-radius);
-    border: none;
-}
-
-/* HOVER */
-.btn-primary-gbl-md:hover {
-    background: var(--color-btn-hover);
-}
-
-/* ACTIVE */
-.btn-primary-gbl-md:active {
-    background: var(--color-btn-active);
-}
-
 /*! RESPONSIVE -----------------------------------> */

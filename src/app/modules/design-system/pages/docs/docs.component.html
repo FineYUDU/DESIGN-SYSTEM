@@ -1,1 +1,66 @@
-<app-sidebar></app-sidebar>
+<!-- <app-sidebar></app-sidebar> -->
+
+
+ <!--? TABLES -->
+ <div class="container-breadcrumb">
+    
+    <div class="table-responsive ag-theme-alpine-custome">
+        <div class="tabs-tables">
+            <!--! TAB 1 -->
+            <input type="radio" class="tabs_radio_none" name="tabsSummary" id="tab1" checked>
+            <label for="tab1" class="tabs_label">General</label>
+            <div class="tabs_content my-4 animate__animated animate__fadeIn">
+                <!--? TABLE GENERAL -->
+                <div class="ag-theme-alpine-custome-2">
+                    <app-table-breadcrumb 
+                    [usersHeader]="usuariosHeader" 
+                    [users]="usuarios"
+                    [calendar]="calendar"
+                    [btnExport]="btnExport"
+                    [filterFunnel]="filterFunnel">
+                    </app-table-breadcrumb>
+                </div>
+            </div>
+
+            <!--! TAB 2 -->
+            <input type="radio" class="tabs_radio_none" name="tabsSummary" id="tab2">
+            <label for="tab2" class="tabs_label">Expiradas</label>
+            <div class="tabs_content my-4 animate__animated animate__fadeIn">
+                <!--? TABLE EXPIRED -->
+                <div class="ag-theme-alpine-custome-2">
+                    <app-table-breadcrumb 
+                    [usersHeader]="usuariosHeader" 
+                    [users]="usuarios"
+                    [calendar]="calendar"
+                    [btnExport]="btnExport"
+                    [filterFunnel]="filterFunnel">
+                    </app-table-breadcrumb>
+                </div>
+            </div>
+
+            <!--! TAB 3 -->
+            <input type="radio" class="tabs_radio_none" name="tabsSummary" id="tab3">
+            <label for="tab3" class="tabs_label">Agendadas</label>
+            <div class="tabs_content my-4 animate__animated animate__fadeIn">
+                <!--? TABLE SCHEDULE -->
+                <div class="ag-theme-alpine-custome-2">
+                    <app-table-breadcrumb 
+                    [usersHeader]="usuariosHeader" 
+                    [users]="usuarios"
+                    [calendar]="calendar"
+                    [btnExport]="btnExport"
+                    [filterFunnel]="filterFunnel">
+                    </app-table-breadcrumb>
+                </div>
+            </div>
+            <!-- UPDATE -->
+            <div class="grid-update">
+                <div class="icon-update"></div>
+                <div for="tab4" class="update">{{'Se actualizó por última vez a las:'}} {{'14:33'}}</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+  
+  

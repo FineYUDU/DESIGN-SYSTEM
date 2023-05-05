@@ -15,7 +15,7 @@
     justify-content: space-between;
     border: solid 1px var(--color-primary-200);
     border-radius:var(--input-radius);
-    min-height: var(--btn-minheight);
+    min-height: var(--btn-minheight-sm);
 }
 
 .input-container:hover {
@@ -44,4 +44,44 @@ input:focus {
     margin-right: 24px;
 }
 
+.btn-calendar-sm {
+    display: none;
+}
 
+.icon-calendar-sm {
+    display: none;
+}
+
+/*? RESPONSE SM --------------------------------------> */
+@media screen and (max-width:768px) {
+    .input-container {
+        display: none;
+    }
+
+    .btn-calendar {
+        display: none;
+    }
+    
+    .icon-calendar {
+        display: none;
+    }
+
+    .btn-calendar-sm {
+        display: block;
+        width: 42px;
+        height: 42px;
+        border-radius: 21px;
+        border: none;
+        background: none;
+        border: solid 1px var(--color-primary-200);
+    }
+    
+     /*? ICON BTN  */
+     .icon-calendar-sm {
+        background: var(--icon-calendar);
+        background-position: center;
+        height: var(--size-icon-md);
+        cursor: pointer;
+        display: block;
+    }
+}

@@ -15,7 +15,7 @@
     justify-content: space-between;
     border: solid 1px var(--color-primary-200);
     border-radius:var(--input-radius);
-    height: var(--btn-minheight);
+    height: var(--btn-minheight-sm);
     
 }
 

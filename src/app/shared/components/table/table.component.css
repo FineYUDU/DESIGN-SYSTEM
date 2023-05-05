@@ -25,21 +25,10 @@
     justify-content: end;
     gap: var(--spacing-xs);
 }
-/* CALENDAR */
-.elem-1 {
-    display: none;
-    justify-content: end;
-}
 
-/* FUNEL */
-.elem-2 {
+/* NONE */
+.none {
     display: none;
-    justify-content: end;
-}
-/* EXPORT BUTTON */
-.elem-3 {
-    display: flex;
-    justify-content: end;
 }
 
 
@@ -165,3 +154,4 @@ input:focus {
         width: var(--input-width-sm);
     }
 }
+
