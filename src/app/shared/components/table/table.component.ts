@@ -8,6 +8,7 @@ import { Pokemon } from 'src/app/core/models/pokemon.interface';
   styleUrls: ['./table.component.css']
 })
 export class TableComponent {
+  //PROPERTIES -------------------------------------------------------------->
   //USERS TABLE
   @Input() usersHeader:tableHeader[] = [];
   @Input() users:Usuario[] = [];
@@ -19,14 +20,10 @@ export class TableComponent {
   // SEARCH
   public search: string='';
 
-  // TODO:El filtro no permite que se ordenen en orden alfabetico, solucionarlo
+  // FILTER -------------------------------------------------------------->
   //? Método para ordener arrays 
   sortArray(array:any[], filtro:string) {
-    // console.log("desordenados:");
-    // for(let i = 0; i < array.length; i++) {
-    //     console.log(array[i][filtro]);
-    // }
-  
+
     array.sort( function(a, b){
       if (a[filtro] < b[filtro]) {
         return -1;
@@ -43,6 +40,7 @@ export class TableComponent {
     }
   }
 
+  // PAGINATION-------------------------------------------------------------->
   //? PAGINATIONS
   // NEXT
   nextPage() {
