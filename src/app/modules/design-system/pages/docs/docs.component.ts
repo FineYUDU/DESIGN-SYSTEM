@@ -12,7 +12,9 @@ export class DocsComponent  {
   // IF YOU DONT WANT ANY OF THIS FIELDS, PUT 'none' IN THE FIELD STRING
   calendar:string =''
   btnExport:string =''
-  filterFunnel:string =''
+  filterFunnel:string =''  
+  // CUSTOME DATE
+  public customeDate: Date = new Date();
 
   public usuarios:Usuario[] = [];
 

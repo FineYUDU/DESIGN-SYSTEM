@@ -1,8 +1,39 @@
-<div class="input-container">
-    <input type="text" class="input-gbl" placeholder="Selecciona una fecha">
-    <button type="submit" class="btn-calendar"> <div class="icon-calendar"></div></button>
+<div class="container-2">
+    <div class="container-moment">
+        <div class="input-container">
+            <input type="text" class="input-gbl" placeholder="{{selectedDay | date:'MM/dd/yyyy'}}">
+            <button type="submit" class="btn-calendar">
+                <div class="icon-calendar">
+                    <div class="calendar">
+                        <div class="header-calendar">
+                            <div class="icon icon-chevron-left" (click)="prevMonth()"></div>
+                            <span class="month">
+                                <span>{{currentMonth}}</span>
+                                <span>{{currentYear}}</span>
+                            </span>
+                            <div class="icon icon-chevron-right" (click)="nextMonth()"></div>
+                        </div>
+                        <!-- DAYS OF WEEK -->
+                        <ol>
+                            <li *ngFor="let day of daysWeek" class="day-week">
+                                {{day.slice(0,3)}}
+                            </li>
+                        </ol>
+                        <!-- DAYS OF MONTH -->
+                        <ol>
+                            <li class="day" *ngFor="let day of daysInMonth" class="day"> {{day | date:'d'}} </li>
+                        </ol>
+                    </div>
+                </div>
+            </button>
+        </div>
+        <button type="submit" class="btn-calendar-sm">
+            <div class="icon-calendar-sm"></div>
+        </button>
+        <br>
+    </div>
+    <!-- ! ERASE -->
+    <span>
+        {{selectedDay | date:'MM/dd/yyyy'}}
+    </span>
 </div>
-
-<button type="submit" class="btn-calendar-sm">
-    <div class="icon-calendar-sm"></div>
-</button>

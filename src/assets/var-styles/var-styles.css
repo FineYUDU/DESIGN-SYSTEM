@@ -209,4 +209,9 @@
     --col-grid-locker           :57%;
     --col-cards-locker-ID       :16%;
     --col-map-locker-ID         :24%;
+
+    /*? BOXES -------------------> */
+    --box-1                     :150px;
+    --box-2                     :300px;
+    --box-3                     :450px;
 }

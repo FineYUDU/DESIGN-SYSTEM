@@ -4,6 +4,7 @@ import { CardsOverviewComponent } from './cards-overview/cards-overview.componen
 import { SharedModule } from 'src/app/shared/shared.module';
 import { TestingTablesComponent } from './testing-tables/testing-tables.component';
 import { FiltroPipe } from '../pipes/filtro.pipe';
+import { TestCalendarComponent } from './test-calendar/test-calendar.component';
 
 
 
@@ -11,10 +12,12 @@ import { FiltroPipe } from '../pipes/filtro.pipe';
   declarations: [
     CardsOverviewComponent,
     TestingTablesComponent,
+    TestCalendarComponent,
   ],
   exports: [
     CardsOverviewComponent,
-    TestingTablesComponent
+    TestingTablesComponent,
+    TestCalendarComponent,
   ],
   imports: [
     CommonModule,

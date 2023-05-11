@@ -13,6 +13,7 @@ import { SummaryComponent } from './pages/summary/summary.component';
 import { CameraComponent } from './pages/camera/camera.component';
 import { ActivityComponent } from './pages/activity/activity.component';
 import { FiltroPipe } from './pipes/filtro.pipe';
+import { ChartsComponent } from './pages/charts/charts.component';
 
 
 @NgModule({
@@ -25,6 +26,7 @@ import { FiltroPipe } from './pipes/filtro.pipe';
     SummaryComponent,
     CameraComponent,
     ActivityComponent,
+    ChartsComponent,
   ],
   imports: [
     CommonModule,

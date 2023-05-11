@@ -1,12 +1,12 @@
 <!-- CONTAINER TABLE} -->
-<div class="container-table">
+<div [ngClass]="tableClass">
     <div class="grid-header">
         <!-- HEADER COLUMN 1 -->
         <div class="grid-header-column-1">
             <!-- SEARCH -->
             <div class="input-container">
-                <input type="text" class="input-gbl" placeholder="Busca un locker por ID, numero de serie..." 
-                #txtSearch (keyup)="onSearch(txtSearch.value)">
+                <input type="text" class="input-gbl" placeholder="Search">
+                <!-- #txtSearch (keyup)="onSearch(txtSearch.value)"> -->
                 <button type="submit" class="btn-search"> <div class="icon-search"></div></button>
             </div>
         </div>
@@ -22,13 +22,14 @@
     </div>
     <!--? TABLE GRID -->
     <div class="row-2">
-        <!-- TABLE STYLE -->
-        <table class="table">
-            <!-- USERS ----------------------------------------------->
+        <!--! TABLE STYLE -->
+         <!-- TABLE STYLE -->
+         <table class="table">
+            <!-- TABLE HEADER -->
             <thead>
                 <tr>
-                    <th *ngFor="let th of usersHeader;" class="grid-th">
-                        <button type="button" (click)="sortArray(this.users, th.filtro)">
+                    <th *ngFor="let th of tableHeader;" class="grid-th">
+                        <button type="button" (click)="sortArray(this.tableData, th.filtro)">
                             <div class="icon-arrow">
                                 <span class="margin-start-icon">
                                     {{th.th | titlecase}}
@@ -38,52 +39,14 @@
                     </th>
                 </tr>
             </thead>
+            <!-- TABLE DATA -->
             <tbody>
-                <tr *ngFor="let user of users">
-                    <td>
-                        {{user.id}}
-                    </td>
-                    <td>
-                        {{user.first_name}}
-                    </td>
-                    <td>
-                        {{user.last_name}}
-                    </td>
-                    <td>
-                        {{user.email}}
+                <tr *ngFor="let td of tableData">
+                    <td *ngFor="let header of tableHeader">
+                        {{td[header.filtro]}}
                     </td>
                 </tr>
             </tbody>
-            <!-- POKEMONS TABLE ----------------------------------------------->
-            <thead>
-                <tr>
-                    <th *ngFor="let th of pokemonsHeader;" class="grid-th">
-                        <button type="button" (click)="sortArray(this.pokemons, th.filtro)">
-                            <div class="icon-arrow">
-                                <span class="margin-start-icon">
-                                    {{th.th | titlecase}}
-                                </span>
-                            </div>
-                        </button>
-                    </th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr *ngFor="let poke of pokemons | filtro:page:search"
-                [ngStyle]="{'height':'100px'}">
-                    <td>
-                        {{poke.id}}
-                    </td>
-                    <td>
-                        {{poke.name}}
-                    </td>
-                    <td>
-                        <img [src]="poke.pic" [alt]="poke.pic">
-                    </td>
-                </tr>
-            </tbody>
-            <!-- <button (click)="prevPage()">back</button>
-            <button (click)="nextPage()" [disabled]="(pokemons | filtro:page:search).length < 5 ">next</button> -->
         </table>
     </div>
 </div>

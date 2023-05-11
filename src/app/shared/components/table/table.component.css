@@ -8,6 +8,16 @@
     margin-bottom: var(--spacing-md);
 }
 
+.table-navbar {
+    border-radius: var(--radius-sm);
+    background: var(--color-container);
+    padding: 0;
+    display: grid;
+    grid-template-rows:42px auto 20px;
+    row-gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-md);
+}
+
 .grid-header {
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -76,7 +86,7 @@ tr td img {
 
 /*? ICON BTN  */
 
-.icon-arrow:hover {
+th:hover button .icon-arrow {
     background: var(--icon-arrow); 
     background-position: right;
     height: var(--size-icon-sm);

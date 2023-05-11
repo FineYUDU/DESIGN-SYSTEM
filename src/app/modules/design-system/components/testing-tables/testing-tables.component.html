@@ -1,9 +1,85 @@
-<app-table 
-    [usersHeader]="usuariosHeader" 
-    [users]="usuarios">
-</app-table>
+<div class="container-tables">
 
-<app-table 
-    [pokemonsHeader]="pokemonHeader" 
-    [pokemons]="pokemons">
-</app-table>
+    <!--? TABLES -->
+    <div class="container-navbar-table">
+        <div class="tabs-tables">
+            
+            <!--! TAB 1 -->
+            <input type="radio" class="tabs_radio_none" name="tabsSummary" id="tab1" checked>
+            <label for="tab1" class="tabs_label">General</label>
+            <div class="tabs_content animate__animated animate__fadeIn">
+                <!--? TABLE GENERAL -->
+                <app-table
+                [tableHeader]="usuariosHeader" 
+                [tableData]="usuarios"
+                [calendar]="calendar"
+                [tableClass]="tableClass">
+                </app-table>
+            </div>
+
+            <!--! TAB 2 -->
+            <input type="radio" class="tabs_radio_none" name="tabsSummary" id="tab2">
+            <label for="tab2" class="tabs_label">Expiradas</label>
+            <div class="tabs_content animate__animated animate__fadeIn">
+                <!--? TABLE GENERAL -->
+                <app-table
+                [calendar]="calendar"
+                [tableHeader]="usuariosHeader" 
+                [tableData]="usuarios"
+                [tableClass]="tableClass">
+            </app-table>
+
+            </div>
+
+            <!--! TAB 1 -->
+            <input type="radio" class="tabs_radio_none" name="tabsSummary" id="tab3">
+            <label for="tab3" class="tabs_label">Agendadas</label>
+            <div class="tabs_content animate__animated animate__fadeIn">
+                <!--? TABLE GENERAL -->
+                <app-table
+                [tableClass]="tableClass"
+                [btnExport]="btnExport"
+                [tableHeader]="usuariosHeader" 
+                [tableData]="usuarios">
+            </app-table>
+
+            </div>
+            <!-- UPDATE -->
+            <div class="grid-update">
+                <div class="icon-update"></div>
+                <div for="tab4" class="update">{{'Se actualizó por última vez a las:'}} {{'14:33'}}</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- TITLE -->
+    <div class="header">
+        <!-- <span>{{tables.title | translate}}</span> -->
+        <span class="span-title">{{'tables' | titlecase}}</span>
+        
+        <p class="txt-p">documentación y ejemplos de tablas</p>
+    </div>
+    
+    <!-- ROW-1 -->
+    <div class="container-overview">
+        <span class="span-subtitle">{{'overview' | titlecase}}</span>
+        <p class="txt-p">Las tablas iteran la data por medio de 2 matrices <strong>tableHeader</strong> y <strong>tableData</strong></p>
+    </div>
+    
+    
+    <app-table
+        [calendar]="calendar"
+        [btnExport]="btnExport"
+        [filterFunnel]="filterFunnel"
+        [tableHeader]="usuariosHeader" 
+        [tableData]="usuarios">
+    </app-table>
+
+    
+    <!-- ROW-1 -->
+    <div class="container-overview">
+        <span class="span-subtitle">{{'Navbar table' | titlecase}}</span>
+        <p class="txt-p">Las tablas iteran la data por medio de 2 matrices <strong>tableHeader</strong> y <strong>tableData</strong></p>
+    </div>
+
+</div>

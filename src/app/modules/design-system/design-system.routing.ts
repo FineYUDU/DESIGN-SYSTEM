@@ -5,6 +5,7 @@ import { DocsComponent } from './pages/docs/docs.component';
 import { ExamplesComponent } from './pages/examples/examples.component';
 import { PatternsComponent } from './pages/patterns/patterns.component';
 import { TablesComponent } from './pages/tables/tables.component';
+import { ChartsComponent } from './pages/charts/charts.component';
 
 const routes: Routes = [
   {
@@ -15,6 +16,7 @@ const routes: Routes = [
       { path: 'examples', component: ExamplesComponent },
       { path: 'patterns', component: PatternsComponent },
       { path: 'tables', component: TablesComponent },
+      { path: 'charts', component:ChartsComponent },
       { path:'**', redirectTo:'docs' }
     ]
   }
