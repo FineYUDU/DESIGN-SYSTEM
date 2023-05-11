@@ -14,8 +14,8 @@ export class NavbarComponent {
 
   Navbar:NavTxt[] = [
     {
-      txt:'docs',
-      route:'docs'
+      txt:'date pipe',
+      route:'date-pipe'
     },
     {
       txt:'examples',
@@ -30,8 +30,8 @@ export class NavbarComponent {
       route:'patterns'
     },
     {
-      txt:'charts',
-      route:'charts'
+      txt:'drag-drop',
+      route:'drag-drop'
     },
   ]
 

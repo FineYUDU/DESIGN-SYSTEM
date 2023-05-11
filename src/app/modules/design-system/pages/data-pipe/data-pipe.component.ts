@@ -3,11 +3,11 @@ import { Usuario, tableHeader } from 'src/app/core/models';
 import { UsuariosService } from 'src/app/core/services/usuarios.service';
 
 @Component({
-  selector: 'app-docs',
-  templateUrl: './docs.component.html',
-  styleUrls: ['./docs.component.css']
+  selector: 'app-data-pipe',
+  templateUrl: './data-pipe.component.html',
+  styleUrls: ['./data-pipe.component.css']
 })
-export class DocsComponent  {
+export class DataPipeComponent  {
   //! PROPERTIES TABLES 
   // IF YOU DONT WANT ANY OF THIS FIELDS, PUT 'none' IN THE FIELD STRING
   calendar:string =''

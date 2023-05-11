@@ -11,7 +11,6 @@ import { ButtonExportComponent } from './components/button-export/button-export.
 import { InputComponent } from './components/input/input.component';
 import { CalendarComponent } from './components/calendar/calendar.component';
 import { FilterFunnelComponent } from './components/filter-funnel/filter-funnel.component';
-import { Table2Component } from './components/table2/table2.component';
 import { ButtonUploadComponent } from './components/button-upload/button-upload.component';
 import { ButtonCreateOrderComponent } from './components/button-create-order/button-create-order.component';
 import { CardTestComponent } from './components/card-test/card-test.component';
@@ -32,7 +31,6 @@ import { TableBreadcrumbComponent } from './components/table-breadcrumb/table-br
     InputComponent,
     CalendarComponent,
     FilterFunnelComponent,
-    Table2Component,
     ButtonUploadComponent,
     ButtonCreateOrderComponent,
     CardTestComponent,
@@ -49,7 +47,6 @@ import { TableBreadcrumbComponent } from './components/table-breadcrumb/table-br
     InputComponent,
     CalendarComponent,
     FilterFunnelComponent,
-    Table2Component,
     ButtonUploadComponent,
     ButtonCreateOrderComponent,
     CardTestComponent,

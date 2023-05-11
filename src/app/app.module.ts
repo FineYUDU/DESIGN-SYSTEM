@@ -21,7 +21,7 @@ registerLocaleData( localeKoKP );
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
   ],
   providers: [
     //LANGUAGE DATE

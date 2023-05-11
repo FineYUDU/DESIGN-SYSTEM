@@ -1,0 +1,52 @@
+.main-container {
+    display: grid;
+    gap: var(--spacing-sm);
+}
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    gap: var(--spacing-sm);
+}
+
+.card-sm {
+    background: var(--color-container);
+    border-radius: var(--radius-sm);
+    height: var(--box-1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chart-grid {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: var(--spacing-sm);
+}
+
+.chart-md {
+    background: var(--color-container);
+    border-radius: var(--radius-sm);
+    height: var(--box-2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ROW3 {
+    display: flex;
+    gap: var(--spacing-sm);
+}
+
+.card-2-grid {
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: var(--spacing-sm);
+}
+
+.chart-2-grid {
+    width: 50%;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-sm);
+}
