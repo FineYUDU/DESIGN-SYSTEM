@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class ButtonExportComponent {
 
+  exportInfo() {
+    console.log('información exportada');
+  }
+  
 }

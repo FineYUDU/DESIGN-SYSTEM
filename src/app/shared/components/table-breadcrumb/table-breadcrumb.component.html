@@ -1,12 +1,11 @@
 <!-- CONTAINER TABLE} -->
-<div class="container-table">
+<div class="container-table-breadcrumb">
     <div class="grid-header">
         <!-- HEADER COLUMN 1 -->
         <div class="grid-header-column-1">
             <!-- SEARCH -->
             <div class="input-container">
-                <input type="text" class="input-gbl" placeholder="Busca un locker por ID, numero de serie..." 
-                #txtSearch (keyup)="onSearch(txtSearch.value)">
+                <input type="text" class="input-gbl" placeholder="Busca un locker por ID, numero de serie...">
                 <button type="submit" class="btn-search"> <div class="icon-search"></div></button>
             </div>
         </div>
@@ -51,34 +50,6 @@
                     </td>
                     <td>
                         {{user.email}}
-                    </td>
-                </tr>
-            </tbody>
-            <!-- POKEMONS TABLE ----------------------------------------------->
-            <thead>
-                <tr>
-                    <th *ngFor="let th of pokemonsHeader;" class="grid-th">
-                        <button type="button" (click)="sortArray(this.pokemons, th.filtro)">
-                            <div class="icon-arrow">
-                                <span class="margin-start-icon">
-                                    {{th.th | titlecase}}
-                                </span>
-                            </div>
-                        </button>
-                    </th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr *ngFor="let poke of pokemons | filtro:search"
-                [ngStyle]="{'height':'100px'}">
-                    <td>
-                        {{poke.id}}
-                    </td>
-                    <td>
-                        {{poke.name}}
-                    </td>
-                    <td>
-                        <img [src]="poke.pic" [alt]="poke.pic">
                     </td>
                 </tr>
             </tbody>

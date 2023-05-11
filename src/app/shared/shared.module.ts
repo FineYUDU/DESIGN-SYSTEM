@@ -12,11 +12,11 @@ import { InputComponent } from './components/input/input.component';
 import { CalendarComponent } from './components/calendar/calendar.component';
 import { FilterFunnelComponent } from './components/filter-funnel/filter-funnel.component';
 import { Table2Component } from './components/table2/table2.component';
-import { BeadcrumbTableComponent } from './components/beadcrumb-table/beadcrumb-table.component';
 import { ButtonUploadComponent } from './components/button-upload/button-upload.component';
 import { ButtonCreateOrderComponent } from './components/button-create-order/button-create-order.component';
 import { CardTestComponent } from './components/card-test/card-test.component';
 import { FiltroPipe } from './pipes/filtro.pipe';
+import { TableBreadcrumbComponent } from './components/table-breadcrumb/table-breadcrumb.component';
 
 
 
@@ -33,11 +33,11 @@ import { FiltroPipe } from './pipes/filtro.pipe';
     CalendarComponent,
     FilterFunnelComponent,
     Table2Component,
-    BeadcrumbTableComponent,
     ButtonUploadComponent,
     ButtonCreateOrderComponent,
     CardTestComponent,
-    FiltroPipe
+    FiltroPipe,
+    TableBreadcrumbComponent
   ],
   exports: [
     SidebarComponent,
@@ -50,10 +50,10 @@ import { FiltroPipe } from './pipes/filtro.pipe';
     CalendarComponent,
     FilterFunnelComponent,
     Table2Component,
-    BeadcrumbTableComponent,
     ButtonUploadComponent,
     ButtonCreateOrderComponent,
     CardTestComponent,
+    TableBreadcrumbComponent
   ],
   imports: [
     CommonModule,

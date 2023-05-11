@@ -1,12 +1,13 @@
 /* ? BTN ICON */
-.btn-icon-funnel {
+.btn-funnel {
     color: var(--color-primary);
-    background: var(--color-container);
+    background: none;
     padding: var(--btn-primary-padding);
-    border: 1px solid var(--color-primary-200);
+    border: 1px solid var(--color-btn-outline-default);
     border-radius:var(--btn-radius);
     font-size: var(--font-b1);
     cursor: pointer;
+    height: var(--btn-minheight-sm);
 }
 
 /*? ICON BTN  */
@@ -14,7 +15,10 @@
     background: var(--icon-funnel); 
     background-position: right;
     height: var(--size-icon-sm);
+    display: flex;
+    align-items: center;
 }
+
 
 /* *Margin for the txt in the dropdown */
 .margin-start-icon {
@@ -22,28 +26,58 @@
 }
 
 /*? HOVER BTN */
-.btn-icon:hover {
-    color: var(--color-container);
-    background: var(--color-btn-default);
-    padding: var(--btn-primary-padding);
-    border: none;
-    border-radius:var(--btn-radius);
-    font-size: var(--font-b1);
+.btn-funnel:hover {
+    background: var(--color-btn-outline-hover);
+    border: 1px solid var(--color-btn-outline-default);
 }
 
-/* HOVER */
-.btn-icon:hover {
-    background: var(--color-btn-hover);
-}
-
-/* ACTIVE */
-.btn-icon:active {
-    background: var(--color-btn-active);
+/*? HOVER BTN */
+.btn-funnel:active {
+    background: var(--color-btn-outline-active);
+    border: 1px solid var(--color-btn-outline-active);
 }
 
 
-@media screen and (max-width:991px) {
-    .btn-icon-funnel {
+/*? BTN SM */
+.btn-funnel-sm {
+    display: none;
+}
+
+/*? ICON BTN  */
+.icon-funnel-sm {
+    display: none;
+}
+
+@media screen and (max-width:768px) {
+    .btn-funnel-sm {
+        display: block;
+        width: 42px;
+        height: 42px;
+        border-radius: 21px;
+        border: 1px solid var(--color-btn-outline-default);
+        background: none;
+    }
+
+    .btn-funnel-sm:active {
+        background: var(--color-btn-outline-active);
+        border: 1px solid var(--color-btn-outline-active);
+    }
+
+    /*? ICON BTN  */
+    .icon-funnel-sm {
+        background: var(--icon-funnel); 
+        background-position: center;
+        height: var(--size-icon-sm);
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+    
+    .btn-funnel {
+        display: none;
+    }
+
+    .icon-funnel {
         display: none;
     }
 }

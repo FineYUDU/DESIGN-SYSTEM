@@ -1,7 +1,5 @@
-.container-table {
-    border-radius: var(--radius-sm);
-    background: var(--color-container);
-    padding: var(--table-padding);
+.container-table-breadcrumb {
+    padding-top: 18px;
     display: grid;
     grid-template-rows:42px auto 20px;
     row-gap: var(--spacing-sm);
@@ -154,4 +152,3 @@ input:focus {
         width: var(--input-width-sm);
     }
 }
-

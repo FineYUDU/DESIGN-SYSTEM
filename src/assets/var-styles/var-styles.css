@@ -51,10 +51,23 @@
     --color-star-4              :#AFCD57;
     --color-star-5              :#2CA04C;
 
+
+    
+     /*? BUTTONS -----------------------> */
+      /* SECONDARY */
+     --color-btn-secondary-default  :#212121;
+     --color-btn-secondary-hover    :#a6a6a6;
+     --color-btn-secondary-active   :#000;
+
      /* BUTTONS */
     --color-btn-default         :#212121;
     --color-btn-hover           :#4b4b4b;
     --color-btn-active          :#000;
+
+    /* OUTLINE BTN */
+    --color-btn-outline-default :#e5e5e5;
+    --color-btn-outline-hover   :#dddddd;
+    --color-btn-outline-active  :#a6a6a6;
 
     /* LOCKERS COLOR */
     --color-locker-fill         :#2f2f2f;
@@ -81,31 +94,37 @@
     --font-bold                 :700;
 
     /* LOGOS SIZE */
+    /* AUTH */
     --logo-auth                 :100px; 
+    --logo-height-auth          :90px; 
+    --logo-width-auth           :152px; 
+    /* NAVBAR */
     --logo-navbar-width         :173px; 
     --logo-navbar-height        :39px;
     --logo-sidebar-height       :39px;
-
+    --gap-navbar                :52px;
 
     /* NAVBAR */
     --size-navbar-sm             :82px;
     --size-navbar-lg             :82px;
-
+    
     /* RADIUS */
-    --radius-sm                :20px;
-
+    --radius-sm                  :20px;
+    --radius-md                 :60px;
+    
     /*? BUTTONS ----------------------------------------> */
     --btn-primary-height        :42px;
     --btn-primary-height-sm     :34px;
-
-    --btn-primary-padding       :10px 24px;
+    
+    --btn-primary-padding       :0px 24px;
+    --btn-primary-padding-sm    :8px 18px;
 
     --btn-radius                :21px;
 
     --size-icon-xs              :6px;
     --size-icon-sm              :15px;
     --size-icon-md              :16px;
-    --btn-minheight             :42px;
+    --btn-minheight-sm          :42px;
 
     /*? IMAGES ------------------------------------------> */
     /* LOGOS */
@@ -114,24 +133,27 @@
     --img-logo-navbar           :url('../logos/logo-white.svg') no-repeat;
     --img-big-kpi               :url('../logos/logo-oxxo-kpi.svg') no-repeat;
     /* ICONS */
-    --icon-translate-navbar     :url('../icons/icon-translate.svg') no-repeat;
-    --icon-info-navbar          :url('../icons/icon-info.svg') no-repeat;
-    --icon-info                 :url('../icons/icon-info.svg') no-repeat;
-    --icon-help-navbar          :url('../icons/icon-help.svg') no-repeat; 
-    --icon-logout-navbar        :url('../icons/icon-logout.svg') no-repeat;
-    --icon-file-download        :url('../icons/icon-file-download.svg') no-repeat;
-    --icon-upload               :url('../icons/icon-upload.svg') no-repeat;
-    --icon-upload-hover         :url('../icons/icon-upload-hover.svg') no-repeat;
-    --icon-plus                 :url('../icons/icon-plus.svg') no-repeat;
-    --icon-chevron-down         :url('../icons/icon-chevron-down.svg') no-repeat;
-    --icon-chevron-right        :url('../icons/icon-chevron-right.svg') no-repeat;
-    --icon-search               :url('../icons/icon-search.svg') no-repeat;
-    --icon-home                 :url('../icons/icon-home.svg') no-repeat;
+    --icon-arrow                :url('../icons/icon-arrow.svg') no-repeat;
     --icon-arrow-success        :url('../icons/icon-arrow-success.svg') no-repeat;
     --icon-arrow-danger         :url('../icons/icon-arrow-danger.svg') no-repeat;
-    --icon-funnel               :url('../icons/icon-funnel.svg') no-repeat;
     --icon-calendar             :url('../icons/icon-calendar.svg') no-repeat;
-    --icon-arrow                :url('../icons/icon-arrow.svg') no-repeat;
+    --icon-chevron-down         :url('../icons/icon-chevron-down.svg') no-repeat;
+    --icon-chevron-down-export  :url('../icons/icon-chevron-down-export-btn.svg') no-repeat;
+    --icon-chevron-right        :url('../icons/icon-chevron-right.svg') no-repeat;
+    --icon-file-download        :url('../icons/icon-file-download.svg') no-repeat;
+    --icon-funnel               :url('../icons/icon-funnel.svg') no-repeat;
+    --icon-help-navbar          :url('../icons/icon-help.svg') no-repeat; 
+    --icon-home                 :url('../icons/icon-home.svg') no-repeat;
+    --icon-info-navbar          :url('../icons/icon-info.svg') no-repeat;
+    --icon-info                 :url('../icons/icon-info.svg') no-repeat;
+    --icon-logout-navbar        :url('../icons/icon-logout.svg') no-repeat;
+    --icon-plus                 :url('../icons/icon-plus.svg') no-repeat;
+    --icon-search               :url('../icons/icon-search.svg') no-repeat;
+    --icon-translate-navbar     :url('../icons/icon-translate.svg') no-repeat;
+    --icon-upload               :url('../icons/icon-upload.svg') no-repeat;
+    --icon-upload-hover         :url('../icons/icon-upload-hover.svg') no-repeat;
+    --icon-update               :url('../icons/icon-update.svg') no-repeat;
+
 
     /*? TRANSITIONS -------------------------------------> */
     --tran-02                   : all 0.2s ease;
@@ -150,14 +172,20 @@
     --height-card-md            :134px;
     --height-card-lg            :250px;
     --height-card-xl            :400px;
+    --height-card-xxl           :550px;
     /* PADDINGS */
     --padding-card-y            :12px;
     --padding-card-x            :18px;
+    --padding-card-md-y         :21px;
+    --padding-card-md-x         :32px;
 
     /*? INPUTS */
     --input-radius              :60px;
-    --input-width-sm            :180px;
+    --input-width-auth          :369px;
+    --input-width-xs            :180px;
+    --input-width-sm            :268px;
     --input-width-md            :438px;
+    --input-height-sm           :42px;
     --input-padding             :10px 24px;
 
     /*? RESPONSIVE -----------------------------------------> */
@@ -176,4 +204,9 @@
     /*? GRID LOCKER  -----------------------------------------> */
     --width-locker-container    :883px;
     --height-locker-container   :568px;
+
+    /*? LOCKER ID COLUMNS -------------------> */
+    --col-grid-locker           :57%;
+    --col-cards-locker-ID       :16%;
+    --col-map-locker-ID         :24%;
 }

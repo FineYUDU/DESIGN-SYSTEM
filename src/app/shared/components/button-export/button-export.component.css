@@ -1,17 +1,18 @@
+
 /* ? BTN ICON */
-.btn-icon-export {
-    color: var(--color-container);
+.btn-export {
     background: var(--color-btn-default);
+    color: var(--color-container);
     padding: var(--btn-primary-padding);
     border: none;
     border-radius:var(--btn-radius);
     font-size: var(--font-b1);
     cursor: pointer;
-    min-height: var(--btn-minheight);
+    height:var(--btn-minheight-sm);
 }
 
 /*? ICON BTN  */
-.icon-file-download {
+.icon-export {
     background: var(--icon-file-download); 
     background-position: right;
     height: var(--size-icon-sm);
@@ -27,11 +28,56 @@
 /*? HOVER BTN */
 
 /* HOVER */
-.btn-icon-export:hover {
+.btn-export:hover {
     background: var(--color-btn-hover);
 }
 
 /* ACTIVE */
-.btn-icon-export:active {
+.btn-export:active {
     background: var(--color-btn-active);
+}
+
+
+/*? BTN SM */
+.btn-export-sm {
+    display: none;
+}
+
+/*? ICON BTN  */
+.icon-export-sm {
+    display: none;
+}
+
+@media screen and (max-width:768px) {
+    .btn-export-sm {
+        display: block;
+        width: 42px;
+        height: 42px;
+        border-radius: 21px;
+        border: none;
+        background: var(--color-primary);
+    }
+
+    /* ACTIVE */
+    .btn-export-sm:active {
+        background: var(--color-btn-active);
+    }
+
+    /*? ICON BTN  */
+    .icon-export-sm {
+        background: var(--icon-file-download); 
+        background-position: center;
+        height: var(--size-icon-sm);
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+    
+    .btn-export {
+        display: none;
+    }
+
+    .icon-export {
+        display: none;
+    }
 }

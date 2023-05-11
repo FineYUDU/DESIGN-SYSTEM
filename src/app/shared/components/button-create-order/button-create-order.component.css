@@ -7,7 +7,7 @@
     border-radius:var(--btn-radius);
     font-size: var(--font-b1);
     cursor: pointer;
-    min-height: var(--btn-minheight);
+    min-height: var(--btn-minheight-sm);
 }
 
 /*? ICON BTN  */
