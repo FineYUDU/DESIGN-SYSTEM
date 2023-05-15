@@ -21,7 +21,9 @@
                         </ol>
                         <!-- DAYS OF MONTH -->
                         <ol>
-                            <li class="day" *ngFor="let day of daysInMonth" class="day"> {{day | date:'d'}} </li>
+                            <li class="day" *ngFor="let day of daysInMonth; let i = index" [ngClass]="i === 0 ? 'first-day': ''">
+                                {{ day | date:'d' }}
+                            </li>
                         </ol>
                     </div>
                 </div>
@@ -32,6 +34,7 @@
         </button>
         <br>
     </div>
+    
     <!-- ! ERASE -->
     <span>
         {{selectedDay | date:'MM/dd/yyyy'}}

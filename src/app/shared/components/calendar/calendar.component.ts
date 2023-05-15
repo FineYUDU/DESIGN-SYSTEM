@@ -19,6 +19,8 @@ export class CalendarComponent {
   public firstDay:number;
   // SELECT DAY
   public selectedDay:Date = new Date;
+  public day:string = `grid-column-start:${this.firstDay}`; 
+
 
   //DAYS IN MONTH
   public get daysInMonth(): Date[] {
@@ -32,27 +34,26 @@ export class CalendarComponent {
   
     return days;
   }
-  
-
 
   constructor() {
     // START IN CURRENT DATE
     this.currentDate = new Date();
-     // SET INITIAL MONTH AND YEAR
-     this.currentMonth = this.currentDate.toLocaleString('es-MX', { month: 'long' });
-     this.currentYear = this.currentDate.getFullYear();
-     this.firstDay = new Date(this.currentDate.getFullYear(), this.currentDate.getMonth()).getDay();
-      // GET DAY OF THE WEEK FOR THE FIRST DAY OF THE MONTH
-      const firstDayOfMonth: Date = new Date(this.currentDate.getFullYear(), this.currentDate.getMonth(), 1);
-      this.firstDayOfWeek = firstDayOfMonth.getDay();
+    // SET INITIAL MONTH AND YEAR
+    this.currentMonth = this.currentDate.toLocaleString('es-MX', { month: 'long' });
+    // YEAR
+    this.currentYear = this.currentDate.getFullYear();
 
-     console.log(this.firstDayOfWeek);
+    this.firstDay = new Date(this.currentDate.getFullYear(), this.currentDate.getMonth()).getDay();
+    // GET DAY OF THE WEEK FOR THE FIRST DAY OF THE MONTH
+    const firstDayOfMonth: Date = new Date(this.currentDate.getFullYear(), this.currentDate.getMonth(), 1);
+    this.firstDayOfWeek = firstDayOfMonth.getDay();
+    console.log(this.firstDayOfWeek);
   }
 
   // ADD A MONTH IN CURRENT DATE
   nextMonth() {
     this.currentDate.setMonth(this.currentDate.getMonth() + 1); 
-    this.currentMonth = this.currentDate.toLocaleString('en-US', { month: 'long' });
+    this.currentMonth = this.currentDate.toLocaleString('es-MX', { month: 'long' });
     this.currentYear = this.currentDate.getFullYear();
     console.log(this.currentDate);
   }
@@ -60,7 +61,7 @@ export class CalendarComponent {
   // SUBTRACT ONE MONTH FROM THE CURRENT DATE
   prevMonth() {
     this.currentDate.setMonth(this.currentDate.getMonth() - 1); 
-    this.currentMonth = this.currentDate.toLocaleString('en-US', { month: 'long' });
+    this.currentMonth = this.currentDate.toLocaleString('es-MX', { month: 'long' });
     this.currentYear = this.currentDate.getFullYear();
     console.log(this.currentDate);
   }
