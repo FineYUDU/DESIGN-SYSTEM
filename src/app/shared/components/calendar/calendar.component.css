@@ -59,7 +59,11 @@ input:focus {
     }
 
     .btn-calendar {
-        display: none;
+        display: inline-block;
+    }
+    
+    .btn-calendar:hover .calendar {
+        display: inline-block;
     }
     
     .icon-calendar {
@@ -76,8 +80,8 @@ input:focus {
         border: solid 1px var(--color-primary-200);
     }
     
-     /*? ICON BTN  */
-     .icon-calendar-sm {
+    /*? ICON BTN  */
+    .icon-calendar-sm {
         background: var(--icon-calendar);
         background-position: center;
         height: var(--size-icon-md);
@@ -200,4 +204,8 @@ ol {
 .container-2 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+}
+
+.table-container-2 {
+    display: flex;
 }

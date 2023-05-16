@@ -4,7 +4,6 @@ import { MainPageComponent } from './pages/main-page/main-page.component';
 import { ExamplesComponent } from './pages/examples/examples.component';
 import { PatternsComponent } from './pages/patterns/patterns.component';
 import { TablesComponent } from './pages/tables/tables.component';
-import { ChartsComponent } from './pages/charts/charts.component';
 import { DataPipeComponent } from './pages/data-pipe/data-pipe.component';
 import { DragDropComponent } from './pages/drag-drop/drag-drop.component';
 

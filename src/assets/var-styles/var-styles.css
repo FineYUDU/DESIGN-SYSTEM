@@ -1,217 +1,489 @@
-
 :root {
     /*? COLORS --------------------------------------------------------->  */
-    --color-primary             :#212121;
-    --color-primary-400         :#4b4b4b;    
-    --color-primary-300         :#a6a6a6;   
-    --color-primary-200         :#e5e5e5;   
-    --color-primary-100         :#dddddd;
+    --color-primary                     :#212121;
+    --color-primary-400                 :#4b4b4b;    
+    --color-primary-300                 :#a6a6a6;   
+    --color-primary-200                 :#bababa;   
+    --color-primary-100                 :#e5e5e5;
 
-    --color-bg                  :#f5f5f5;
-    --color-container           :#fdfdfd;
-    --color-navbar              :#212121;
-    --color-kpi-brand           :#212121;
+    --color-bg                          :#f5f5f5;
+    --color-container                   :#fdfdfd;
+    --color-navbar                      :#212121;
+    --color-kpi-brand                   :#212121;
+    --color-txt-kpi-brand               :#fafafa;
+
+    --color-txt-navbar                  :#fdfdfd;
+    --color-container-grid-locker       :#212121;
 
     /* STATUS */
-    --color-danger              :#e50f0f;
-    --color-danger-soft         :#fce7e7;
-    --color-warn                :#e08803;
-    --color-warn-soft           :#fcf3e6;
-    --color-success             :#2ca04c;
-    --color-success-soft        :#ebf6ed;
-    --color-info                :#0076b9;
-    --color-info-soft           :#e6f3fa;
-    --color-available           :#18345d;
-    --color-available-soft      :#bfe2f5;
-    --color-muted               :#828282;
-    --color-muted-soft          :#f0f0f0;
+    --color-danger                      :#e50f0f;
+    --color-danger-soft                 :#fce7e7;
+    --color-warn                        :#e08803;
+    --color-warn-soft                   :#fcf3e6;
+    --color-success                     :#2ca04c;
+    --color-success-soft                :#ebf6ed;
+    --color-info                        :#0076b9;
+    --color-info-soft                   :#e6f3fa;
+    --color-available                   :#18345d;
+    --color-available-soft              :#bfe2f5;
+    --color-muted                       :#828282;
+    --color-muted-soft                  :#f0f0f0;
 
     /* BRAND COLORS */
-    --color-primary-brand       :#ffb840;
-    --color-secondary-brand     :#df0024;
+    --color-primary-brand               :#ffb840;
+    --color-secondary-brand             :#df0024;
 
     /* CHARTS */
-    --color-chart-100           :#41b5f5;
-    --color-chart-200           :#0082CB;
-    --color-chart-300           :#18345D;
+    --color-chart-100                   :#41b5f5;
+    --color-chart-200                   :#0082CB;
+    --color-chart-300                   :#18345D;
+    
+    --color-heatmap-100                 :#8AC6E7;
+    --color-heatmap-200                 :#54ABDC;
+    --color-heatmap-300                 :#0082CB;
+    --color-heatmap-400                 :#016299;
+    --color-heatmap-500                 :#003755;
 
     /* STATUS LOCKER GRID */
-    --color-available           :#363636;
-    --color-occupied            :#ed1f2d;
-    --color-defective           :#de8c00;
-    --color-open                :#ffffff;
-    --color-expired             :#fdf300;
-    --color-schedule            :#ab1ec2;
-
-
-    /* STARS */
-    --color-star-1              :#E25B5B;
-    --color-star-2              :#FEAA1D;
-    --color-star-3              :#FDCC41;
-    --color-star-4              :#AFCD57;
-    --color-star-5              :#2CA04C;
-
-
+    --color-available                   :#363636;
+    --color-occupied                    :#ed1f2d;
+    --color-defective                   :#de8c00;
+    --color-open                        :#ffffff;
+    --color-expired                     :#fdf300;
+    --color-schedule                    :#ab1ec2;
     
-     /*? BUTTONS -----------------------> */
-      /* SECONDARY */
-     --color-btn-secondary-default  :#212121;
-     --color-btn-secondary-hover    :#a6a6a6;
-     --color-btn-secondary-active   :#000;
+    /*? BUTTONS -----------------------> */
+    /* SECONDARY */
+    --color-btn-secondary-default       :#212121;
+    --color-btn-secondary-hover         :#a6a6a6;
+    --color-btn-secondary-active        :#000;
 
-     /* BUTTONS */
-    --color-btn-default         :#212121;
-    --color-btn-hover           :#4b4b4b;
-    --color-btn-active          :#000;
-
+    /* BUTTONS */
+    --color-btn-default                 :#212121;
+    --color-btn-hover                   :#4b4b4b;
+    --color-btn-active                  :#000;
+    --color-btn-txt                     :#fdfdfd;
+    
     /* OUTLINE BTN */
-    --color-btn-outline-default :#e5e5e5;
-    --color-btn-outline-hover   :#dddddd;
-    --color-btn-outline-active  :#a6a6a6;
-
+    --color-btn-outline-default         :#e5e5e5;
+    --color-btn-outline-hover           :#dddddd;
+    --color-btn-outline-active          :#a6a6a6;
+    
+    /*? LOCKERS -----------------------> */
     /* LOCKERS COLOR */
-    --color-locker-fill         :#2f2f2f;
-    --color-locker-stroke       :#000;
+    --color-locker-fill                 :#2f2f2f;
+    --color-locker-stroke               :#000;
 
     /*? FONTS------------------------------------------------------------> */
-    --primary-font              :'Inter', sans-serif;
+    --primary-font                      :'Inter', sans-serif;
 
     /* FONT-SIZE */
-    --font-bh1                  :64px;
-    --font-bh2                  :48px;
-    --font-bh3                  :36px;
-    --font-h1                   :24px;
-    --font-h2                   :18px;
-    --font-h3                   :16px;
-    --font-b1                   :14px;
-    --font-c1                   :13px;
-    --font-c2                   :12px;
-    --font-c3                   :10px;
+    --font-bh1                          :64px;
+    --font-bh2                          :48px;
+    --font-bh3                          :36px;
+    --font-h1                           :24px;
+    --font-h2                           :18px;
+    --font-h3                           :16px;
+    --font-b1                           :14px;
+    --font-c1                           :13px;
+    --font-c2                           :12px;
+    --font-c3                           :10px;
 
     /* FONT-WEIGHT  */
-    --font-medium               :500;
-    --font-semibold             :600;
-    --font-bold                 :700;
+    --font-medium                       :500;
+    --font-semibold                     :600;
+    --font-bold                         :700;
 
     /* LOGOS SIZE */
     /* AUTH */
-    --logo-auth                 :100px; 
-    --logo-height-auth          :90px; 
-    --logo-width-auth           :152px; 
-    /* NAVBAR */
-    --logo-navbar-width         :173px; 
-    --logo-navbar-height        :39px;
-    --logo-sidebar-height       :39px;
-    --gap-navbar                :52px;
+    --logo-xxs                          :50px; 
+    --logo-xs                           :80px; 
+    --logo-sm                           :90px; 
+    --logo-md                           :100px; 
+    --logo-lg                           :130px; 
+    --logo-width-auth                   :152px; 
 
     /* NAVBAR */
-    --size-navbar-sm             :82px;
-    --size-navbar-lg             :82px;
+    --gap-navbar-sm                     :30px;
+    --gap-navbar-md                     :52px;
+
+    /* NAVBAR */
+    --size-navbar-sm                    :82px;
+    --size-navbar-lg                    :82px;
     
     /* RADIUS */
-    --radius-sm                  :20px;
-    --radius-md                 :60px;
+    --radius-xs                         :10px;
+    --radius-sm                         :20px;
+    --radius-md                         :60px;
     
     /*? BUTTONS ----------------------------------------> */
-    --btn-primary-height        :42px;
-    --btn-primary-height-sm     :34px;
+    --btn-primary-height                :42px;
+    --btn-primary-height-sm             :34px;
     
-    --btn-primary-padding       :0px 24px;
-    --btn-primary-padding-sm    :8px 18px;
+    --btn-primary-padding               :0px 24px;
+    --btn-primary-padding-sm            :8px 18px;
 
-    --btn-radius                :21px;
+    --btn-radius                        :21px;
 
-    --size-icon-xs              :6px;
-    --size-icon-sm              :15px;
-    --size-icon-md              :16px;
-    --btn-minheight-sm          :42px;
+    /* ICONS */
+    --size-icon-xs                      :6px;
+    --size-icon-sm                      :15px;
+    --size-icon-md                      :16px;
+    --size-icon-lg                      :17px;
+    --size-icon-xl                      :32px;
+
+    /* BTN MIN HEIGHT */
+    --btn-minheight-xs                  :34px;
+    --btn-minheight-sm                  :42px;
+    
+    /* BTN MAX HEIGHT */
+    --btn-maxheight-xs                  :34px;
+    --btn-maxheight-sm                  :42px;
 
     /*? IMAGES ------------------------------------------> */
     /* LOGOS */
-    --img-logo-auth             :url('../logos/logo-box.svg') no-repeat;
-    --img-logo-sidebar           :url('../logos/logo-box-navbar.svg') no-repeat;
-    --img-logo-navbar           :url('../logos/logo-white.svg') no-repeat;
-    --img-big-kpi               :url('../logos/logo-oxxo-kpi.svg') no-repeat;
+    --logo-auth                         :url('../logos/oxxo/logo-auth.svg') no-repeat;
+    /*--img-logo-sidebar                  :url('../logos/logo-box-navbar.svg') no-repeat;*/ /* DESIGN SYSTEM */
+    --logo-navbar                       :url('../logos/oxxo/logo-navbar.svg') no-repeat;
+    --img-big-kpi                       :url('../logos/oxxo/logo-kpi.svg') no-repeat;
+    
     /* ICONS */
-    --icon-arrow                :url('../icons/icon-arrow.svg') no-repeat;
-    --icon-arrow-success        :url('../icons/icon-arrow-success.svg') no-repeat;
-    --icon-arrow-danger         :url('../icons/icon-arrow-danger.svg') no-repeat;
-    --icon-calendar             :url('../icons/icon-calendar.svg') no-repeat;
-    --icon-chevron-down         :url('../icons/icon-chevron-down.svg') no-repeat;
-    --icon-chevron-down-export  :url('../icons/icon-chevron-down-export-btn.svg') no-repeat;
-    --icon-chevron-right        :url('../icons/icon-chevron-right.svg') no-repeat;
-    --icon-file-download        :url('../icons/icon-file-download.svg') no-repeat;
-    --icon-funnel               :url('../icons/icon-funnel.svg') no-repeat;
-    --icon-help-navbar          :url('../icons/icon-help.svg') no-repeat; 
-    --icon-home                 :url('../icons/icon-home.svg') no-repeat;
-    --icon-info-navbar          :url('../icons/icon-info.svg') no-repeat;
-    --icon-info                 :url('../icons/icon-info.svg') no-repeat;
-    --icon-logout-navbar        :url('../icons/icon-logout.svg') no-repeat;
-    --icon-plus                 :url('../icons/icon-plus.svg') no-repeat;
-    --icon-search               :url('../icons/icon-search.svg') no-repeat;
-    --icon-translate-navbar     :url('../icons/icon-translate.svg') no-repeat;
-    --icon-upload               :url('../icons/icon-upload.svg') no-repeat;
-    --icon-upload-hover         :url('../icons/icon-upload-hover.svg') no-repeat;
-    --icon-update               :url('../icons/icon-update.svg') no-repeat;
+    --icon-appearance                   :url('../icons/icon-appearance.svg') no-repeat;
+    --icon-arrow                        :url('../icons/icon-arrow.svg') no-repeat;
+    --icon-arrow-success                :url('../icons/icon-arrow-success.svg') no-repeat;
+    --icon-arrow-danger                 :url('../icons/icon-arrow-danger.svg') no-repeat;
+    --icon-bell                         :url('../icons/icon-bells.svg') no-repeat;
+    --icon-box-delivered                :url('../icons/icon-log-delivered.svg') no-repeat;
+    --icon-box-expired                  :url('../icons/icon-log-expired.svg') no-repeat;
+    --icon-calendar                     :url('../icons/icon-calendar.svg') no-repeat;
+    --icon-chevron-down                 :url('../icons/icon-chevron-down.svg') no-repeat;
+    --icon-chevron-down-export          :url('../icons/icon-chevron-down-export-btn.svg') no-repeat;
+    --icon-chevron-right                :url('../icons/icon-chevron-right.svg') no-repeat;
+    --icon-chevron-right-dropdown       :url('../icons/icon-chevron-right-dropdown.svg') no-repeat;
+    --icon-en                           :url('../icons/icon-flag-en.svg') no-repeat;
+    --icon-es                           :url('../icons/icon-flag-es.svg') no-repeat;
+    --icon-file-download                :url('../icons/icon-file-download.svg') no-repeat;
+    --icon-funnel                       :url('../icons/icon-funnel.svg') no-repeat;
+    --icon-help                         :url('../icons/icon-help.svg') no-repeat; 
+    --icon-home                         :url('../icons/icon-home.svg') no-repeat;
+    --icon-info-navbar                  :url('../icons/icon-info.svg') no-repeat;
+    --icon-info                         :url('../icons/icon-info.svg') no-repeat;
+    --icon-info-dropdown                :url('../icons/icon-info-dropdown.svg') no-repeat;
+    --icon-inte                         :url('../icons/icon-inte.svg') no-repeat;
+    --icon-moon                         :url('../icons/icon-moon.svg') no-repeat;
+    --icon-logout                       :url('../icons/icon-logout.svg') no-repeat;
+    --icon-plus                         :url('../icons/icon-plus.svg') no-repeat;
+    --icon-search                       :url('../icons/icon-search.svg') no-repeat;
+    --icon-settings                     :url('../icons/icon-settings.svg') no-repeat;
+    --icon-sun                          :url('../icons/icon-sun.svg') no-repeat;
+    --icon-translate                    :url('../icons/icon-translate.svg') no-repeat;
+    --icon-upload                       :url('../icons/icon-upload.svg') no-repeat;
+    --icon-update                       :url('../icons/icon-update.svg') no-repeat;
+    --icon-version                      :url('../icons/icon-version.svg') no-repeat;
+    --icon-view                         :url('../icons/icon-view.svg') no-repeat;
 
 
     /*? TRANSITIONS -------------------------------------> */
-    --tran-02                   : all 0.2s ease;
-    --tran-03                   : all 0.3s ease;
-    --tran-04                   : all 0.4s ease;
-    --tran-05                   : all 0.5s ease;
+    --tran-02                           : all 0.2s ease;
+    --tran-03                           : all 0.3s ease;
+    --tran-04                           : all 0.4s ease;
+    --tran-05                           : all 0.5s ease;
     
     /*? SPACING -------------------------------------> */
-    --spacing-xs                :18px;
-    --spacing-sm                :24px;
-    --spacing-md                :30px;
-    --spacing-lg                :68px;
+    --spacing-xs                        :18px;
+    --spacing-sm                        :24px;
+    --spacing-md                        :30px;
+    --spacing-lg                        :68px;
 
     /*? CARD'S -----------------------------------------> */
-    --height-card-sm            :122px;
-    --height-card-md            :134px;
-    --height-card-lg            :250px;
-    --height-card-xl            :400px;
-    --height-card-xxl           :550px;
+    --height-card-sm                    :122px;
+    --height-card-md                    :134px;
+    --height-card-lg                    :250px;
+    --height-card-xlg                   :276px;
+    --height-card-xl                    :400px;
+    --height-card-xxl                   :550px;
     /* PADDINGS */
-    --padding-card-y            :12px;
-    --padding-card-x            :18px;
-    --padding-card-md-y         :21px;
-    --padding-card-md-x         :32px;
+    --padding-card-y                    :12px;
+    --padding-card-x                    :18px;
+    --padding-card-md-y                 :21px;
+    --padding-card-md-x                 :32px;
 
     /*? INPUTS */
-    --input-radius              :60px;
-    --input-width-auth          :369px;
-    --input-width-xs            :180px;
-    --input-width-sm            :268px;
-    --input-width-md            :438px;
-    --input-height-sm           :42px;
-    --input-padding             :10px 24px;
+    --input-radius                      :60px;
+    --input-width-auth                  :369px;
+    --input-width-xs                    :180px;
+    --input-width-sm                    :268px;
+    --input-width-md                    :438px;
+    --input-height-sm                   :42px;
+    --input-padding                     :10px 24px;
 
     /*? RESPONSIVE -----------------------------------------> */
     /* CONTAINERS */
-    --container-width           :82.45%;
-    --container-max-width       :1550px;
-    --container-auth-lg         :466px;
+    --container-width                   :82.45%;
+    --container-max-width               :1550px;
+    --container-auth-lg                 :466px;
     
     /*? TABLE -----------------------------------------> */
-    --table-padding             :18px 32px;
+    --table-padding                     :18px 32px;
     
     /*? TAB -----------------------------------------> */
-    --padding-tab-sm            :10px 16px;
-    --padding-tab-lg            :18px 32px;
+    --padding-tab-sm                    :10px 16px;
+    --padding-tab-lg                    :18px 32px;
     
     /*? GRID LOCKER  -----------------------------------------> */
-    --width-locker-container    :883px;
-    --height-locker-container   :568px;
+    --width-locker-container            :883px;
+    --height-locker-container           :568px;
 
     /*? LOCKER ID COLUMNS -------------------> */
-    --col-grid-locker           :57%;
-    --col-cards-locker-ID       :16%;
-    --col-map-locker-ID         :24%;
-
+    --col-grid-locker                   :57%;
+    --col-cards-locker-ID               :16%;
+    --col-map-locker-ID                 :24%;
+    
     /*? BOXES -------------------> */
     --box-1                     :150px;
     --box-2                     :300px;
     --box-3                     :450px;
+}
+
+.dark-mode {
+    /*? COLORS --------------------------------------------------------->  */
+    --color-primary                     :#fdfdfd;
+    --color-primary-400                 :#BABABA;    
+    --color-primary-300                 :#a6a6a6;   
+    --color-primary-200                 :#bababa;   
+    --color-primary-100                 :#e5e5e5;
+
+    --color-bg                          :#212121;
+    --color-container                   :#2D2D2D;
+    --color-navbar                      :#2D2D2D;
+    --color-kpi-brand                   :#4b4b4b;
+    --color-txt-kpi-brand               :#fafafa;
+
+    --color-txt-navbar                  :#fdfdfd;
+    --color-grid-locker                 :#4b4b4b;
+
+    /* STATUS */
+    --color-danger                      :#B02329;
+    --color-danger-soft                 :#FFC7C7;
+    --color-warn                        :#BF790E;
+    --color-warn-soft                   :#F5DDBA;
+    --color-success                     :#2E8345;
+    --color-success-soft                :#CBF8CF;
+    --color-info                        :#0076b9;
+    --color-info-soft                   :#e6f3fa;
+    --color-available                   :#18345d;
+    --color-available-soft              :#bfe2f5;
+    --color-muted                       :#828282;
+    --color-muted-soft                  :#f0f0f0;
+
+    /* BRAND COLORS */
+    --color-primary-brand               :#ffb840;
+    --color-secondary-brand             :#df0024;
+
+    /* CHARTS */
+    --color-chart-100                   :#8FCEF0;
+    --color-chart-200                   :#579BC1;
+    --color-chart-300                   :#025A8C;
+
+    --color-heatmap-100                 :#8FCEF0;
+    --color-heatmap-200                 :#579BC1;
+    --color-heatmap-300                 :#1784C1;
+    --color-heatmap-400                 :#025A8C;
+    --color-heatmap-500                 :#094464;
+
+    /* STATUS LOCKER GRID */
+    --color-available                   :#363636;
+    --color-occupied                    :#ed1f2d;
+    --color-defective                   :#de8c00;
+    --color-open                        :#ffffff;
+    --color-expired                     :#fdf300;
+    --color-schedule                    :#ab1ec2;
+    
+    /*? BUTTONS -----------------------> */
+    /* SECONDARY */
+    --color-btn-secondary-default       :#212121;
+    --color-btn-secondary-hover         :#a6a6a6;
+    --color-btn-secondary-active        :#000;
+    
+    /* BUTTONS */
+    --color-btn-default                 :#4b4b4b;
+    --color-btn-hover                   :#212121;
+    --color-btn-active                  :#000;
+    --color-btn-txt                     :#fdfdfd;
+    
+    /* OUTLINE BTN */
+    --color-btn-outline-default         :#e5e5e5;
+    --color-btn-outline-hover           :#dddddd;
+    --color-btn-outline-active          :#a6a6a6;
+    
+    /*? LOCKERS -----------------------> */
+    /* LOCKERS COLOR */
+    --color-locker-fill                 :#2f2f2f;
+    --color-locker-stroke               :#000;   
+
+    /*? FONTS------------------------------------------------------------> */
+    --primary-font                      :'Inter', sans-serif;
+
+    /* FONT-SIZE */
+    --font-bh1                          :64px;
+    --font-bh2                          :48px;
+    --font-bh3                          :36px;
+    --font-h1                           :24px;
+    --font-h2                           :18px;
+    --font-h3                           :16px;
+    --font-b1                           :14px;
+    --font-c1                           :13px;
+    --font-c2                           :12px;
+    --font-c3                           :10px;
+
+    /* FONT-WEIGHT  */
+    --font-medium                       :500;
+    --font-semibold                     :600;
+    --font-bold                         :700;
+
+    /* LOGOS SIZE */
+    /* AUTH */
+    --logo-xxs                          :50px; 
+    --logo-xs                           :80px; 
+    --logo-sm                           :90px; 
+    --logo-md                           :100px; 
+    --logo-lg                           :130px; 
+    --logo-width-auth                   :152px; 
+
+    /* NAVBAR */
+    --gap-navbar-sm                     :30px;
+    --gap-navbar-md                     :52px;
+
+    /* NAVBAR */
+    --size-navbar-sm                    :82px;
+    --size-navbar-lg                    :82px;
+    
+    /* RADIUS */
+    --radius-xs                         :10px;
+    --radius-sm                         :20px;
+    --radius-md                         :60px;
+    
+    /*? BUTTONS ----------------------------------------> */
+    --btn-primary-height                :42px;
+    --btn-primary-height-sm             :34px;
+    
+    --btn-primary-padding               :0px 24px;
+    --btn-primary-padding-sm            :8px 18px;
+    
+    --btn-radius                        :21px;
+    
+    /* ICONS */
+    --size-icon-xs                      :6px;
+    --size-icon-sm                      :15px;
+    --size-icon-md                      :16px;
+    --size-icon-lg                      :17px;
+    --size-icon-xl                      :32px;
+
+    /* BTN MIN HEIGHT */
+    --btn-minheight-xs                  :34px;
+    --btn-minheight-sm                  :42px;
+    
+    /* BTN MAX HEIGHT */
+    --btn-maxheight-xs                  :34px;
+    --btn-maxheight-sm                  :42px;
+
+    /*? IMAGES ------------------------------------------> */
+    /* LOGOS */
+    --logo-auth                         :url('../logos/oxxo/logo-auth.svg') no-repeat;
+    /*--img-logo-sidebar              :url('../logos/logo-box-navbar.svg') no-repeat;*/ /* DESIGN SYSTEM */
+    --logo-navbar                       :url('../logos//logo-navbar.svg') no-repeat;
+    --img-big-kpi                       :url('../logos/oxxo/logo-kpi.svg') no-repeat;
+    
+    /* ICONS */
+    --icon-appearance                   :url('../icons/icon-appearance-dark.svg') no-repeat;
+    --icon-arrow                        :url('../icons/icon-arrow.svg') no-repeat;
+    --icon-arrow-success                :url('../icons/icon-arrow-success.svg') no-repeat;
+    --icon-arrow-danger                 :url('../icons/icon-arrow-danger.svg') no-repeat;
+    --icon-bell                         :url('../icons/icon-bells.svg') no-repeat;
+    --icon-box-delivered                :url('../icons/icon-log-delivered.svg') no-repeat;
+    --icon-box-expired                  :url('../icons/icon-log-expired.svg') no-repeat;
+    --icon-calendar                     :url('../icons/icon-calendar.svg') no-repeat;
+    --icon-chevron-down                 :url('../icons/icon-chevron-down.svg') no-repeat;
+    --icon-chevron-down-export          :url('../icons/icon-chevron-down-export-btn.svg') no-repeat;
+    --icon-chevron-right                :url('../icons/icon-chevron-right.svg') no-repeat;
+    --icon-chevron-right-dropdown       :url('../icons/icon-chevron-right-dropdown.svg') no-repeat;
+    --icon-en                           :url('../icons/icon-flag-en.svg') no-repeat;
+    --icon-es                           :url('../icons/icon-flag-es.svg') no-repeat;
+    --icon-file-download                :url('../icons/icon-file-download-dark.svg') no-repeat;
+    --icon-funnel                       :url('../icons/icon-funnel.svg') no-repeat;
+    --icon-help                         :url('../icons/icon-help.svg') no-repeat; 
+    --icon-home                         :url('../icons/icon-home.svg') no-repeat;
+    --icon-info-navbar                  :url('../icons/icon-info.svg') no-repeat;
+    --icon-info                         :url('../icons/icon-info.svg') no-repeat;
+    --icon-info-dropdown                :url('../icons/icon-info-dropdown-dark.svg') no-repeat;
+    --icon-inte                         :url('../icons/icon-inte-dark.svg') no-repeat;
+    --icon-moon                         :url('../icons/icon-moon-dark.svg') no-repeat;
+    --icon-logout                       :url('../icons/icon-logout-dark.svg') no-repeat;
+    --icon-plus                         :url('../icons/icon-plus.svg') no-repeat;
+    --icon-search                       :url('../icons/icon-search.svg') no-repeat;
+    --icon-settings                     :url('../icons/icon-settings-dark.svg') no-repeat;
+    --icon-sun                          :url('../icons/icon-sun-dark.svg') no-repeat;
+    --icon-translate                    :url('../icons/icon-translate-dark.svg') no-repeat;
+    --icon-upload                       :url('../icons/icon-upload-dark.svg') no-repeat;
+    --icon-update                       :url('../icons/icon-update.svg') no-repeat;
+    --icon-version                      :url('../icons/icon-version.svg') no-repeat;
+    --icon-view                         :url('../icons/icon-view.svg') no-repeat;
+
+
+    /*? TRANSITIONS -------------------------------------> */
+    --tran-02                           : all 0.2s ease;
+    --tran-03                           : all 0.3s ease;
+    --tran-04                           : all 0.4s ease;
+    --tran-05                           : all 0.5s ease;
+    
+    /*? SPACING -------------------------------------> */
+    --spacing-xs                        :18px;
+    --spacing-sm                        :24px;
+    --spacing-md                        :30px;
+    --spacing-lg                        :68px;
+
+    /*? CARD'S -----------------------------------------> */
+    --height-card-sm                    :122px;
+    --height-card-md                    :134px;
+    --height-card-lg                    :250px;
+    --height-card-xlg                   :276px;
+    --height-card-xl                    :400px;
+    --height-card-xxl                   :550px;
+    /* PADDINGS */
+    --padding-card-y                    :12px;
+    --padding-card-x                    :18px;
+    --padding-card-md-y                 :21px;
+    --padding-card-md-x                 :32px;
+
+    /*? INPUTS */
+    --input-radius                      :60px;
+    --input-width-auth                  :369px;
+    --input-width-xs                    :180px;
+    --input-width-sm                    :268px;
+    --input-width-md                    :438px;
+    --input-height-sm                   :42px;
+    --input-padding                     :10px 24px;
+
+    /*? RESPONSIVE -----------------------------------------> */
+    /* CONTAINERS */
+    --container-width                   :82.45%;
+    --container-max-width               :1550px;
+    --container-auth-lg                 :466px;
+    
+    /*? TABLE -----------------------------------------> */
+    --table-padding                     :18px 32px;
+    
+    /*? TAB -----------------------------------------> */
+    --padding-tab-sm                    :10px 16px;
+    --padding-tab-lg                    :18px 32px;
+    
+    /*? GRID LOCKER  -----------------------------------------> */
+    --width-locker-container            :883px;
+    --height-locker-container           :568px;
+
+    /*? LOCKER ID COLUMNS -------------------> */
+    --col-grid-locker                   :57%;
+    --col-cards-locker-ID               :16%;
+    --col-map-locker-ID                 :24%;
+    
 }

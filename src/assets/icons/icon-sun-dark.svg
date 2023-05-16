@@ -3,7 +3,8 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:none;stroke:#BABABA;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;}
+	.st0{fill:none;stroke:#FDFDFD;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;}
 </style>
-<path class="st0" d="M8,10.8V8 M8,5.2L8,5.2 M15,8c0,3.9-3.1,7-7,7c-3.9,0-7-3.1-7-7c0-3.9,3.1-7,7-7C11.9,1,15,4.1,15,8z"/>
+<path class="st0" d="M8,1v1.4 M8,13.6V15 M2.4,8H1 M4,4L3,3 M12,4l1-1 M4,12l-1,1 M12,12l1,1 M15,8h-1.4 M11.5,8
+	c0,1.9-1.6,3.5-3.5,3.5S4.5,9.9,4.5,8S6.1,4.5,8,4.5S11.5,6.1,11.5,8z"/>
 </svg>

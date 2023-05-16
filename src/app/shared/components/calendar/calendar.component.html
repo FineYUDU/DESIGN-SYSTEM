@@ -21,7 +21,10 @@
                         </ol>
                         <!-- DAYS OF MONTH -->
                         <ol>
-                            <li class="day" *ngFor="let day of daysInMonth; let i = index" [ngClass]="i === 0 ? 'first-day': ''">
+                            <li class="day" 
+                                [style.grid-column-start]="i === 0 ? firstDay + 1: ''" 
+                                *ngFor="let day of daysInMonth; let i = index" 
+                                (click)="selectDay(day)">
                                 {{ day | date:'d' }}
                             </li>
                         </ol>
@@ -37,6 +40,32 @@
     
     <!-- ! ERASE -->
     <span>
+        <strong>Time</strong>
+        <br>
+        {{selectedDay | date:'shortTime'}}
+        <br>
+        <br>
+        
+        <strong>Custome Date</strong>
+        <br>
         {{selectedDay | date:'MM/dd/yyyy'}}
+        <br>
+        <br>
+
+        <strong>Short</strong>
+        <br>
+        {{selectedDay | date:'short'}}
+        <br>
+        <br>
+
+        <strong>Custome Date</strong>
+        <br>
+        {{selectedDay | date:'EEEE, MMMM d, y'}}
+        <br>
+        <br>
+
+        <strong>Long</strong>
+        <br>
+        {{selectedDay | date:'long'}}
     </span>
 </div>

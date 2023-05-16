@@ -1,42 +1,143 @@
-<div class="grid-father">
-    <!--? GRID 1 -->
-    <div class="grid-logo">
-        <div class="logo-navbar" routerLink="grid"></div>
-    </div>
+<!-- NAVBAR GRID -->
+<div class="grid-navbar">
     
-    <!--? GRID 2 -->
-    <ul class="grid-nav">
-        <li class="nav-align" *ngFor="let nav of Navbar">
-            <a class="nav-link" [routerLink]="nav.route">
-                {{nav.txt}}
+    <!-- CONTAINER LOGO -->
+    <div class="container-logo">
+        <div class="logo-navbar" routerLink="overview"></div>
+    </div>
+
+    <!-- CONTAINER MENU -->
+    <ul class="container-menu" [style.grid-template-columns]="'repeat(' + cantidadColumnsArr + ', 1fr)'">
+        <li class="align-menu" *ngFor="let menu of navMenu">
+            <a class="link-menu" [routerLink]="menu.route" routerLinkActive="active">
+                {{ menu.txt | lowercase | titlecase}}
             </a>
         </li>
     </ul>
-    
-    <!--? GRID 3 -->
+    <!-- CONTAINER DROPDOWN -->
     <div class="grid-user">
-        <!-- GRID ALERT -->
-        <div class="grid-alert">
-        </div>
         <!-- GRID SPAN -->
         <div class="grid-span">
-            <span class="username-dropdown" >Erick Eduardo</span>
-            <span class="role-dropdown" >Administrador</span>
+            <span class="username" >{{ username | lowercase | titlecase}}</span>
+            <span class="role" >{{ role |  titlecase }}</span>
         </div>
+        <!-- GRID DROPDOWN -->
         <div class="grid-dropdown">
-            <ul class="icon-chevron">
-                <li>
-                    <div></div>
-                    <ul class="dropdown">
-                        <li class="dropdown-link"> 
-                            <a 
-                                *ngFor="let drop of dropdownNav"> 
-                                {{drop.txt}} 
+            <div class="icon-chevron">
+                <!-- DROPDOWN ------------------------------------->
+                <div class="dropdown">
+                    <!--? ROW 1 -->
+                    <div class="txt-row-1" routerLink="profile">
+                        <!-- CIRCLE -->
+                        <div class="profile-circle">
+                            {{circle_profile | uppercase }}
+                        </div>
+                        <!-- TXT ROW 1 -->
+                        <div class="txt-container">
+                            <a class="role-dropdown">Administrador</a>
+                            <a class="profile-dropdown">Ver perfil</a>
+                        </div>
+                    </div>
+                    <hr>
+                    <!--? ROW 2 -->
+                    <div class="txt-row-2">
+                        <!-- SETTINGS -->
+                        <div class="icon-txt">
+                            <!-- MENU -->
+                            <div class="icon-settings" ></div>
+                            <a routerLink="settings" class="menu-dropdown"> Configuraciones</a> 
+
+                        </div>
+                         <!-- TRANSLATE -->
+                         <div class="icon-txt-translate">
+                            <div class="container-icon-txt">
+                                <!-- ICON -->
+                                <div class="icon-translate" ></div>
+                                <!-- TXT -->
+                                <a class="menu-dropdown">{{'Idioma'}} </a> 
+                            </div>
+                            <div class="icon-chevron-dropdown"></div>
+                            <!-- DROPDOWN TRANSLATE -->
+                            <div class="dropdown-translate">
+                                 <!-- ENGLISH -->
+                                 <div class="container-txt-icon">
+                                    <!-- ICON -->
+                                    <div class="icon-en"></div>
+                                    <!-- TXT -->
+                                    <span class="txt-theme-dropdown">Ingles</span>
+                                </div>
+
+                                <!-- SPANISH -->
+                                <div class="container-txt-icon">
+                                    <!-- ICON -->
+                                    <div class="icon-es"></div>
+                                    <!-- TXT -->
+                                    <span class="txt-theme-dropdown">Español</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- THEME -->
+                        <div class="icon-txt-theme">
+                            <!-- ICON TXT -->
+                            <div class="container-icon-txt">
+                                <!-- ICON -->
+                                <div class="icon-theme" ></div>
+                                <!-- TXT -->
+                                <a class="menu-dropdown">{{'Apariencia'}} </a> 
+                            </div>
+                            <div class="icon-chevron-dropdown"></div>
+                            <!-- DROPDOWN THEME -->
+                            <div class="dropdown-theme">
+                                <!-- LIGHT -->
+                                <div class="container-txt-icon">
+                                    <!-- ICON -->
+                                    <div class="icon-sun"></div>
+                                    <!-- TXT -->
+                                    <span class="txt-theme-dropdown" (click)="cambiarModo('light')">{{'Modo claro'}}</span>
+                                </div>
+
+                                <!-- DARK -->
+                                <div class="container-txt-icon">
+                                    <!-- ICON -->
+                                    <div class="icon-moon"></div>
+                                    <!-- TXT -->
+                                    <span class="txt-theme-dropdown" (click)="cambiarModo('dark')">{{'Modo oscuro'}}</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <hr>
+
+                        <!-- INTEGRATIONS -->
+                        <div class="icon-txt">
+                            <!-- MENU -->
+                            <div class="icon-integration"></div>
+                            <a routerLink="integrations" class="menu-dropdown">Integraciones</a> 
+
+                        </div>
+
+                        <!-- VERSION -->
+                        <div class="icon-txt">
+                            <!-- MENU -->
+                            <div class="icon-version"></div>
+                            <a routerLink="version" class="menu-dropdown">Versión del sistema</a> 
+
+                        </div>
+                    </div>
+                    <!--? ROW 3 -->
+                    <hr>
+                    <div class="txt-row-3">
+                        <div class="icon-txt">
+                            <!-- MENU -->
+                            <div class="icon-logout"></div>
+                            <a class="menu-dropdown">
+                                {{'Cerrar sesión'}}
                             </a> 
-                        </li>
-                    </ul>
-                </li>
-            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
